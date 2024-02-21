@@ -3,9 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="(https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png)" alt="PENS" width="80" height="80">
-  </a>
+  <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png" alt="Logo PENS">
 
   <h3 align="center">Workshop Administrasi Jaringan</h3>
 
