@@ -13,10 +13,7 @@
     <strong>Nadila Aulya Salsabila Mirdianti</strong>
     <br />
     <br />
-    <p>3122500002</p>
-    ·
-    <p>D3 IT A</p>
-    ·
+    <p>3122500002</p> · <p>D3 IT A</p>
   </p>
 </div>
 
