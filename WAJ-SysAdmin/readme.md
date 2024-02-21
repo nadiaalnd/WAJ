@@ -7,9 +7,9 @@
   <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png" alt="Logo PENS">
   <h3 style="text-align: center;">Disusun Oleh : <br>Kelompok 3</h3>
   <p style="text-align: center;">
-    <strong>Ade Hafis Rabbani (31225000001)</strong><br>
-    <strong>Nadila Aulya Salsabila Mirdianti (31225000002)</strong><br>
-    <strong>Gandi Rukmaning Ayu (31225000016)</strong>
+    <strong>Ade Hafis Rabbani (3122500001)</strong><br>
+    <strong>Nadila Aulya Salsabila Mirdianti (3122500002)</strong><br>
+    <strong>Gandi Rukmaning Ayu (3122500016)</strong>
   </p>
   
   <h3 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
