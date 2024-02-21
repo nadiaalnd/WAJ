@@ -22,15 +22,21 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-repository">About The Project</a>
+      <a href="#laporan"></a>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About The Repository
 
-Repository untuk menyimpan project dan tugas di mata kuliah workshop administrasi jaringan yang diampu oleh Bapak Ferry Astika
+Repository untuk menyimpan project dan tugas di mata kuliah workshop administrasi jaringan yang diampu oleh Bapak Dr. Ferry Astika Saputra, S.T., M.Sc.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Laporan
+-  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-SysAdmin">Laporan SysAdmin</a> 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
