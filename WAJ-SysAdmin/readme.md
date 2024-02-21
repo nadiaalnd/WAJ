@@ -48,8 +48,7 @@
 
     ![](images/Aspose.Words.e04077e7-aee8-44ef-a14f-38cb7e48fb94.002.jpeg)
 
-3. Pada bagian Hardware, setting **Base Memory** minimal sebesar **4096 MB** dan **Processor** minimal sebesar **2 Core
-   **. Kemudian pilih **Next**.
+3. Pada bagian Hardware, setting **Base Memory** minimal sebesar **4096 MB** dan **Processor** minimal sebesar **2 Core**. Kemudian pilih **Next**.
 
     ![](images/Aspose.Words.e04077e7-aee8-44ef-a14f-38cb7e48fb94.003.jpeg)
 
