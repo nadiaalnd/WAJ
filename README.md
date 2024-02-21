@@ -4,20 +4,19 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="[images/logo.png](https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png)" alt="PENS" width="80" height="80">
+    <img src="(https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png)" alt="PENS" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Workshop Administrasi Jaringan</h3>
 
   <p align="center">
-    Workshop Administrasi Jaringan
-    <br />
     <strong>Nadila Aulya Salsabila Mirdianti</strong>
     <br />
     <br />
     <p>3122500002</p>
     ·
     <p>D3 IT A</p>
+    ·
   </p>
 </div>
 
