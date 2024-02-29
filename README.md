@@ -36,7 +36,8 @@ Repository untuk menyimpan project dan tugas di mata kuliah workshop administras
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Laporan
--  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-SysAdmin">Laporan SysAdmin</a> 
+-  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-SysAdmin">Laporan SysAdmin</a>
+-  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-SysAdmin2">Laporan SysAdmin 2</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
