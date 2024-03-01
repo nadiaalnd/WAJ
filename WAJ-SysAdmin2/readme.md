@@ -8,5 +8,5 @@
 
 ---
 
-### Versi Demo PPT:
+### Versi Demo PPT Soal Nomor 2 :
 [![Preview PPT](images/demo_ppt.png)](https://waj-slides.vercel.app/)
