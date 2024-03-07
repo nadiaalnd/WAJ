@@ -11,15 +11,16 @@
     <strong>Nadila Aulya Salsabila Mirdianti (3122500002)</strong><br>
     <strong>Gandi Rukmaning Ayu (3122500016)</strong>
   </p>
-  
-  <h3 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
+
+<h3 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
   <hr>
 </div>
 
 ## Daftar Isi
 
-1. [Apa itu Mikrotik?](#1-apa-itu-mikrotik?-)
-2. [Penjelasan Langkah-Langkah](#2-penjelasan-langkah-langkah-)
+- [Daftar Isi](#daftar-isi)
+    - [1. Apa itu Mikrotik?](#1-apa-itu-mikrotik)
+    - [2. Penjelasan](#2-penjelasan)
 
 
 ### 1. Apa itu Mikrotik?
@@ -37,92 +38,57 @@ Namun, masih banyak orang yang memiliki kesalahpahaman mengenai konsep Mikrotik 
 
 2. Step 2
 
-   ![](images/1.jpg)
-
-3. Step 3
-
    ![](images/3.jpg)
 
-4. Step 4
+   ![](images/1.jpg)
 
+
+Membuat IP Address untuk interface ether1 (192.168.88.3/24)
+3. Step 3
    ![](images/4.jpg)
+   ![](images/6.jpg)
+   ![](images/7.jpg)
+   ![](images/9.jpg)
+   Membuat bridge untuk menghubungkan ether2-5 dengan ether1 untuk menjadikan sebagai switch
+4. Step 4
+   ![](images/5.jpg)
+   lakukan pengujian apakah bisa terhubung dengan gateway
 
 5. Step 5
 
-   ![](images/5.jpg)
-
-6. Step 6
-
-   ![](images/6.jpg)
-
-7. Step 7
-
-   ![](images/7.jpg)
-
-8. Step 8
-
    ![](images/8.jpg)
 
-9. Step 9
-
-   ![](images/9.jpg)
-
-10. Step 10
+6.  Step 6
 
     ![](images/10.jpg)
-
-11. Step 11
-
     ![](images/11.jpg)
 
-12. Step 12
+    Tambahkan IP address untuk ether 2
+7.  Step 7
 
     ![](images/12.jpg)
-
-13. Step 13
-
-    ![](images/13.jpg)
-
-14. Step 14
-
     ![](images/14.jpg)
+    agar bisa terhubung ke internet kita mengatur route agar semua interface nantinya akan di
 
-15. Step 15
+8.  Step 8
 
     ![](images/15.jpg)
-
-16. Step 16
-
     ![](images/16.jpg)
-
-17. Step 17
-
     ![](images/17.jpg)
-
-18. Step 18
-
     ![](images/18.jpg)
-
-19. Step 19
-
     ![](images/19.jpg)
-
-20. Step 20
-
     ![](images/20.jpg)
-
-21. Step 21
-
     ![](images/21.jpg)
+    Membuat DHCP server untuk client yang akan terhubung pada interface bridge yang sudah dibuat tadi dengan range IP 200-254 dan menggunakan DNS dari PENS
 
-22. Step 22
 
+9.  Step 9
     ![](images/22.jpg)
-
-23. Step 23
-
     ![](images/23.jpg)
-
-24. Step 24
-
     ![](images/24.jpg)
+    Membuat NAT agar client bisa terhubung ke internet, dengan mengatur General, masukkan interface yang akan di NAT, dan masukkan IP address yang akan di NAT dan masukkan action masquerade
+
+10. Step 10
+    ![](images/25.jpg)
+    Hubungkan kabel dari ether 2 ke laptop dan cek apakah sudah bisa terhubung ke internet
+    jika sudah maka akan muncul lease yang diberikan oleh DHCP server
