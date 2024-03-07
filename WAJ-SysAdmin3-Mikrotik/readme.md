@@ -16,9 +16,9 @@
   <hr><hr>
 </div>
 
-| Nomor | File                             |
-|-------|----------------------------------|
-| A     | [Mikrotik](mikrotik.md)          |
-| B     | [SysAdmin Cleaning System](2.md) |
+| Nomor | File                                     |
+|-------|------------------------------------------|
+| A     | [Mikrotik](mikrotik.md)                  |
+| B     | [SysAdmin Cleaning System](sysadmin3.md) |
 
 ---
