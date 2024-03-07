@@ -56,7 +56,7 @@ Analisis ruang disk dalam mode grafis yang terintegrasi dengan Gnome, tetapi ter
   sudo apt update && sudo apt install baobab
   
 ![Gambar 8.6.1-5](images/8.6.1-5.png)
-![Gambar 8.6.1-6](images/8.6.1-6.png)
+![Gambar 8.6.1.-6](images/8.6.1.-6.png)
 
 _Baobab: Analisis ruang disk pada Gnome_
 
