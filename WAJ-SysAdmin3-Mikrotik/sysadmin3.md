@@ -78,7 +78,7 @@ Jika telah mengupgrade sistem, ada kemungkinan beberapa paket tidak lagi tersedi
 ![Gambar 8.6.2-3](images/8.6.2-3.png)
 
 Terakhir, untuk membuat daftar dan membersihkan file konfigurasi yang tetap ada meskipun aplikasi telah dihapus.
-  dpkg –list | awk ‘/^rc/ {print $2}’
+  dpkg –list | awk ‘/^rc/ {print $2}’ 
   sudo apt purge $(dpkg –list | awk ‘/^rc/ {print $2}’)
   
 ![Gambar 8.6.2-4](images/8.6.2-4.png)
