@@ -13,14 +13,13 @@
   </p>
   
   <h3 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
-  <hr><hr>
+  <hr>
 </div>
 
 ## Daftar Isi
 
 1. [Apa itu Mikrotik?](#1-apa-itu-mikrotik?-)
-2. [Penjelasan](#2-penjelasan-)
-3. [Penjelasan](#3-penjelasan-)
+2. [Penjelasan Langkah-Langkah](#2-penjelasan-)
 
 
 ### 1. Apa itu Mikrotik?
@@ -35,8 +34,6 @@ Namun, masih banyak orang yang memiliki kesalahpahaman mengenai konsep Mikrotik 
 
 ### 2. Penjelasan
 1. Buka aplikasi **Mikrotik**.
-
-   ![](images/Aspose.Words.e04077e7-aee8-44ef-a14f-38cb7e48fb94.001.png)
 
 2. Step 2
 
