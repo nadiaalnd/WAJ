@@ -19,8 +19,8 @@
 ## Daftar Isi
 
 1. [Apa itu Mikrotik?](#1-apa-itu-mikrotik?-)
-2. [Penjelasan](#2-buat-ringkasan-tentang-perbedaan-dari-debian-12-bookworm-dengan-debian-11-bullseye-versi-kernel-kebutuhan-sistem-penerapan-systemd-dan-perbedaan-packagenya-dalam-bentuk-tabel-)
-3. [Penjelasan](#3-jelaskan-fungsi-dari-file-etcgroups-beserta-formatnya)
+2. [Penjelasan](#2-penjelasan-)
+3. [Penjelasan](#3-penjelasan-)
 
 
 ### 1. Apa itu Mikrotik?
