@@ -19,7 +19,7 @@
 ## Daftar Isi
 
 1. [Apa itu Mikrotik?](#1-apa-itu-mikrotik?-)
-2. [Penjelasan Langkah-Langkah](#2-penjelasan-)
+2. [Penjelasan Langkah-Langkah](#2-penjelasan-langkah-langkah-)
 
 
 ### 1. Apa itu Mikrotik?
