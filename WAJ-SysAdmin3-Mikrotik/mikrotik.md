@@ -34,43 +34,55 @@ Namun, masih banyak orang yang memiliki kesalahpahaman mengenai konsep Mikrotik 
 
 
 ### 2. Penjelasan
-1. Buka aplikasi **Mikrotik**.
+1. Step 1 
+Buka aplikasi **Mikrotik**.
 
 2. Step 2
+
+    ![](images/topologi.jpg)
+
+Buat topologi seperti gambar diatas, dengan menghubungkan kabel dari ether 1 ke ether 2-5
+
+3. Step 3
 
    ![](images/3.jpg)
 
    ![](images/1.jpg)
 
-
 Membuat IP Address untuk interface ether1 (192.168.88.3/24)
-3. Step 3
+
+3. Step 4
    ![](images/4.jpg)
    ![](images/6.jpg)
    ![](images/7.jpg)
    ![](images/9.jpg)
+
    Membuat bridge untuk menghubungkan ether2-5 dengan ether1 untuk menjadikan sebagai switch
-4. Step 4
+
+4. Step 5
    ![](images/5.jpg)
+
    lakukan pengujian apakah bisa terhubung dengan gateway
 
-5. Step 5
+5. Step 6
 
    ![](images/8.jpg)
 
-6.  Step 6
+6.  Step 7
 
     ![](images/10.jpg)
     ![](images/11.jpg)
 
     Tambahkan IP address untuk ether 2
-7.  Step 7
+
+7.  Step 8
 
     ![](images/12.jpg)
     ![](images/14.jpg)
+
     agar bisa terhubung ke internet kita mengatur route agar semua interface nantinya akan di
 
-8.  Step 8
+8.  Step 9
 
     ![](images/15.jpg)
     ![](images/16.jpg)
@@ -79,16 +91,19 @@ Membuat IP Address untuk interface ether1 (192.168.88.3/24)
     ![](images/19.jpg)
     ![](images/20.jpg)
     ![](images/21.jpg)
+
     Membuat DHCP server untuk client yang akan terhubung pada interface bridge yang sudah dibuat tadi dengan range IP 200-254 dan menggunakan DNS dari PENS
 
 
-9.  Step 9
+9.  Step 10
     ![](images/22.jpg)
     ![](images/23.jpg)
     ![](images/24.jpg)
+
     Membuat NAT agar client bisa terhubung ke internet, dengan mengatur General, masukkan interface yang akan di NAT, dan masukkan IP address yang akan di NAT dan masukkan action masquerade
 
-10. Step 10
+10. Step 11
     ![](images/25.jpg)
+
     Hubungkan kabel dari ether 2 ke laptop dan cek apakah sudah bisa terhubung ke internet
     jika sudah maka akan muncul lease yang diberikan oleh DHCP server
