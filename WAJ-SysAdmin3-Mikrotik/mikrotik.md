@@ -35,13 +35,13 @@ Namun, masih banyak orang yang memiliki kesalahpahaman mengenai konsep Mikrotik 
 
 ### 2. Penjelasan
 1. Step 1 
-Buka aplikasi **Mikrotik**.
+    Buka aplikasi **Mikrotik**.
 
 2. Step 2
 
     ![](images/topologi.jpg)
 
-Buat topologi seperti gambar diatas, dengan menghubungkan kabel dari ether 1 ke ether 2-5
+    Buat topologi seperti gambar diatas, dengan menghubungkan kabel dari ether 1 ke ether 2-5
 
 3. Step 3
 
@@ -49,7 +49,7 @@ Buat topologi seperti gambar diatas, dengan menghubungkan kabel dari ether 1 ke 
 
    ![](images/1.jpg)
 
-Membuat IP Address untuk interface ether1 (192.168.88.3/24)
+    Membuat IP Address untuk interface ether1 (192.168.88.3/24)
 
 3. Step 4
    ![](images/4.jpg)
@@ -60,9 +60,10 @@ Membuat IP Address untuk interface ether1 (192.168.88.3/24)
    Membuat bridge untuk menghubungkan ether2-5 dengan ether1 untuk menjadikan sebagai switch
 
 4. Step 5
+
    ![](images/5.jpg)
 
-   lakukan pengujian apakah bisa terhubung dengan gateway
+   Lakukan pengujian apakah bisa terhubung dengan gateway
 
 5. Step 6
 
@@ -80,7 +81,7 @@ Membuat IP Address untuk interface ether1 (192.168.88.3/24)
     ![](images/12.jpg)
     ![](images/14.jpg)
 
-    agar bisa terhubung ke internet kita mengatur route agar semua interface nantinya akan di
+    Agar bisa terhubung ke internet kita mengatur route agar semua interface nantinya akan di
 
 8.  Step 9
 
