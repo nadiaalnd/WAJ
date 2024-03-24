@@ -274,13 +274,10 @@ Glue record adalah data non-authoritative yang merupakan sebuah catatan A yang m
 
 - IETF
   Semua protokol transportasi dan routing layer 3, termasuk IP, TCP, UDP, HTTP, DNS, protokol routing, telnet, rsync, IPsec, dan protokol manajemen jaringan. IETF memiliki beberapa area fokus yang berbeda. Area Umum (gen), Keamanan (sec), Aplikasi dan Real Time (art), Operasi dan Manajemen Internet (ops), Layanan Transportasi (tsv), Routing (rtg), dan Internet (int). Setiap area bertanggung jawab atas aspek tertentu dalam pengembangan standar IETF.<br><br>
-
 - IEEE
   Semua protokol transportasi dan kontrol plane di layer 1 dan layer 2, termasuk Ethernet, spanning tree, dan jaringan nirkabel.<br><br>
-
 - W3C
   Bahasa markup (bahasa yang menjelaskan cara menampilkan atau merender konten), termasuk HTML dan XML.<br><br>
-
 - ITU
   Standar internasional apa pun, termasuk penomoran, skema enkripsi, dan protokol routing (seperti IS-IS).
   </span>
