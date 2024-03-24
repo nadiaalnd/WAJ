@@ -36,10 +36,10 @@ Repository untuk menyimpan project dan tugas di mata kuliah workshop administras
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Laporan
--  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-SysAdmin">Laporan SysAdmin</a>
--  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-SysAdmin2">Laporan SysAdmin 2</a>
--  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-SysAdmin3-Mikrotik">Laporan Mikrotik</a>
--  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-SysAdmin3">Laporan SysAdmin 3 (DNS dan Ekosistem Internet)</a>
+-  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-Tugas1">Laporan Tugas 1 SysAdmin</a>
+-  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-Tugas2">Laporan Tugas 2 SysAdmin 2</a>
+-  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-Tugas3">Laporan Tugas 3 Mikrotik</a>
+-  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-Tugas4">Laporan Tugas 4 DNS dan Ekosistem Internet</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

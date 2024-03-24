@@ -46,7 +46,7 @@ Berikut adalah langkah-lang untuk instalasi DNS sever menggunakan BIND9 pada Deb
 lakukan configurasi pada file /etc/bind/named.conf dengan meggunakan perintah: `sudo nano /etc/bind/named.conf`
 
 <div align="center">
-    <img src="img/" alt="Config file named.conf" width="60%" height="auto"><br>
+    <img src="images/" alt="Config file named.conf" width="60%" height="auto"><br>
 </div><br>
 </span>
 
