@@ -17,6 +17,6 @@
 | Nomor | File                               |
 |-------|------------------------------------|
 | A     | [DNS Server](dns-server.md)        |
-| B     | [Ekosistem Internet](sysadmin3.md) |
+| B     | [Ekosistem Internet](ekosistem-internet.md) |
 
 ---
