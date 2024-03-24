@@ -214,7 +214,7 @@ File zona DNS adalah file yang memuat informasi mengenai konten suatu situs web.
 ### j.	Common Resource Record Types
 
 <div align="center">
-    <img src="img/5.8.png" alt="Common Resource Record Types" width="100%" height="auto"><br>
+    <img src="images/5.8.png" alt="Common Resource Record Types" width="100%" height="auto"><br>
 </div>
 
 ### k.	Example: RRs in a Zone File
