@@ -16,9 +16,9 @@
   <hr>
 </div>
 
-| Nomor | File                                     |
-|-------|------------------------------------------|
-| A     | [Mikrotik](dns-server.md)                  |
-| B     | [SysAdmin Cleaning System](sysadmin3.md) |
+| Nomor | File                               |
+|-------|------------------------------------|
+| A     | [DNS Server](dns-server.md)        |
+| B     | [Ekosistem Internet](sysadmin3.md) |
 
 ---

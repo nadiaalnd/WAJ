@@ -18,12 +18,12 @@
 ## Daftar Isi
 
 - [Daftar Isi](#daftar-isi)
-    - [1. Apa itu DNS Server?](#1-apa-itu-mikrotik)
-    - [2. Langkah Langkah](#2-penjelasan)
+    - [1. Apa itu DNS Server?](#1-apa-itu-dns)
+    - [2. Langkah Langkah](#2-langkah-langkah)
 
 
-### 1. Apa itu Mikrotik?
-**Pengertian Mikrotik**
+### 1. Apa itu DNS?
+**Pengertian DNS**
 
 ![Gambar DNS Server](images/)
 
@@ -35,18 +35,130 @@ Maka, ini artinya kita perlu punya daftar IP Address dari semua website yang ing
 DNS adalah sistem yang memungkinkan kita untuk mengakses website dengan mengetikkan URL. DNS akan menghubungkan URL tersebut dengan IP Address yang sesuai.
 
 
-### 2. Penjelasan
-1. Step 1
+### 2. Langkah Langkah
+<span style="font-size:14px">
+Berikut adalah langkah-lang untuk instalasi DNS sever menggunakan BIND9 pada Debian 12:
+</span>
 
-2. Step 2
+<span style="font-size:14px">
 
-3. Step 3
+#### 1. Konfigurasi file /etc/bind/named.conf
+lakukan configurasi pada file /etc/bind/named.conf dengan meggunakan perintah: `sudo nano /etc/bind/named.conf`
 
-3. Step 4
+<div align="center">
+    <img src="img/" alt="Config file named.conf" width="60%" height="auto"><br>
+</div><br>
+</span>
 
-4. Step 5
+<span style="font-size:14px">
 
-5. Step 6
+#### 2. Konfigurasi file /etc/bind/named.conf.local
+Lakukan configurasi pada file /etc/bind/named.conf.local dengan menggunakan perintah: `sudo nano /etc/bind/named.conf.local`
+
+<div align="center">
+    <img src="img/" alt="Config file named.conf.local" width="60%" height="auto"><br>
+</div><br>
+</span>
+
+<span style="font-size:14px">
+
+#### 3. Konfigurasi file /etc/bind/named.conf.options
+Lakukan configurasi pada file /etc/bind/named.conf.options dengan menggunakan perintah: `sudo nano /etc/bind/named.conf.options`
+
+<div align="center">
+    <img src="img/" alt="Config file named.conf.options" width="60%" height="auto"><br>
+</div><br>
+
+</span>
+
+<span style="font-size:14px">
+
+#### 4. Pengecekan Konfigurasi
+Lakukan pengecekan konfigurasi dengan menggunakan perintah: `sudo named-checkconf /etc/bind/named.conf`
+
+<div align="center">
+    <img src="img/" alt="pengecekan config" width="60%" height="auto"><br>
+</div><br>
+</span>
+
+<span style="font-size:14px">
+
+#### 5. Buat file /var/lib/bind/db.kelompok3.local
+Buat file zone /var/lib/bind/db.kelompok3.local yang digunakan untuk domain, dengan menggunakan perintah: `sudo nano /var/lib/bind/db.kelompok3.local`
+
+<div align="center">
+    <img src="img/" alt="Buat file db.kelompok3.local" width="60%" height="auto"><br>
+</div><br>
+</span>
+
+#### 6. Buat file /var/lib/bind/db.kelompok3.local.inv
+Buat file reverse zone /var/lib/bind/db.kelompok3.local.inv yang digunakan untuk reverse lookup, dengan menggunakan perintah: `sudo nano /var/lib/bind/db.kelompok3.local.inv`
+
+<div align="center">
+    <img src="img/" alt="Buat file db.kelompok3.local.inv" width="60%" height="auto"><br>
+</div><br>
+
+<span style="font-size:14px">
+
+#### 7. Restart service BIND
+Lakukan restart service BIND dengan menggunakan perintah: `sudo systemctl restart named`
+
+<div align="center">
+    <img src="img/" alt="Restart service" width="60%" height="auto"><br>
+</div><br>
+File `named.conf.local` mengatur zona-zona DNS lokal. Dalam konfigurasi ini, ada dua zona yang didefinisikan: "kelompok3.local" dan "3.168.192.in-addr.arpa". Server ditetapkan sebagai master untuk kedua zona tersebut. Informasi DNS disimpan dalam file database yang sesuai, dan konfigurasi juga memungkinkan pembaruan dinamis menggunakan kunci yang sesuai.
+</span>
+
+<span style="font-size:14px">
+
+#### 8. Cek status service BIND
+Lakukan pengecekan status service BIND dengan menggunakan perintah: `sudo systemctl status named`
+
+<div align="center">
+    <img src="img/" alt="Cek status service" width="60%" height="auto"><br>
+</div><br>
+</span>
+
+<span style="font-size:14px">
+
+#### 9. Check port 53
+Check port 53 dengan menggunakan perintah: `sudo ss -tulnp` pastikan port 53 sudah terbuka 
+
+<div align="center">
+    <img src="img/" alt="Cek port 53" width="60%" height="auto"><br>
+</div><br>
+</span>
+
+<span style="font-size:14px">
+
+#### 10. Konfigurasi file /etc/resolv.conf
+Lakukan konfigurasi pada file /etc/resolv.conf dengan menggunakan perintah: `sudo nano /etc/resolv.conf`
+
+<div align="center">
+    <img src="img/" alt="Config file resolv.conf" width="60%" height="auto"><br>
+</div><br>
+</span>
+
+<span style="font-size:14px">
+
+#### 11. Query DNS domain kelompok3.local
+Lakukan query DNS domain kelompok3.local dengan menggunakan perintah: `dig kelompok3.local`
+
+<div align="center">
+    <img src="img/dns-11.png" alt="Query DNS" width="60%" height="auto"><br>
+</div><br>
+</span>
+
+<span style="font-size:14px">
+
+#### 12. Check nslookup
+Lakukan pengecekan nslookup dengan menggunakan perintah: `nslookup kelompok3.local`
+
+<div align="center">
+    <img src="img/" alt="" width="60%" height="auto"><br>
+</div><br>
+
+</span>
 
 
 
