@@ -97,21 +97,21 @@ Buat file reverse zone /var/lib/bind/db.kelompok3.local.inv yang digunakan untuk
 Lakukan restart service BIND dengan menggunakan perintah: `sudo systemctl restart named`
 
 <div align="center">
-    <img src="images/dns7.png" alt="Restart service" width="60%" height="auto"><br>
+    <img src="images/dns7.jpg" alt="Restart service" width="60%" height="auto"><br>
 </div><br>
 
 #### 8. Cek status service BIND
 Lakukan pengecekan status service BIND dengan menggunakan perintah: `sudo systemctl status named`
 
 <div align="center">
-    <img src="images/dns8.png" alt="Cek status service" width="60%" height="auto"><br>
+    <img src="images/dns8.jpg" alt="Cek status service" width="60%" height="auto"><br>
 </div><br>
 
 #### 9. Check port 53
 Check port 53 dengan menggunakan perintah: `sudo ss -tulnp` pastikan port 53 sudah terbuka 
 
 <div align="center">
-    <img src="images/dns9.png" alt="Cek port 53" width="60%" height="auto"><br>
+    <img src="images/dns9.jpg" alt="Cek port 53" width="60%" height="auto"><br>
 </div><br>
 
 #### 10. Konfigurasi file [resolv.conf](./bind9/resolv.conf)
@@ -120,21 +120,21 @@ Lakukan konfigurasi pada file /etc/resolv.conf dengan menggunakan perintah: `sud
 (Lihat file [resolv.conf](./bind9/resolv.conf))
 
 <div align="center">
-    <img src="images/dns10.png" alt="Config file resolv.conf" width="60%" height="auto"><br>
+    <img src="images/dns10.jpg" alt="Config file resolv.conf" width="60%" height="auto"><br>
 </div><br>
 
 #### 11. Query DNS domain kelompok3.local
 Lakukan query DNS domain kelompok3.local dengan menggunakan perintah: `dig kelompok3.local`
 
 <div align="center">
-    <img src="images/dns11.png" alt="Query DNS" width="60%" height="auto"><br>
+    <img src="images/dns11.jpg" alt="Query DNS" width="60%" height="auto"><br>
 </div><br>
 
 #### 12. Check nslookup
 Lakukan pengecekan nslookup dengan menggunakan perintah: `nslookup kelompok3.local`
 
 <div align="center">
-    <img src="images/dns12.png" alt="" width="60%" height="auto"><br>
+    <img src="images/dns12.jpg" alt="" width="60%" height="auto"><br>
 </div><br>
 
 
