@@ -5,9 +5,9 @@
 <br />
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png" alt="Logo PENS">
-  <h3 style="text-align: center;">Disusun Oleh : <br>Kelompok 3</h3>
+  <h3 style="text-align: center;">Disusun Oleh : <br>Nadila Aulya Salsabila Mirdianti</h3>
   <p style="text-align: center;">
-    <strong>Nadila Aulya Salsabila Mirdianti (3122500002)</strong><br>
+    <strong>NRP : 3122500002</strong><br>
   </p>
 
 <h3 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
