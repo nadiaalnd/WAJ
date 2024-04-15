@@ -2,10 +2,16 @@
 
 ## 1. Install Postfix
 ```apt -y install postfix sasl2-bin```
+
+![postfix](./img/1.1.jpg)
+
 - Pilih no configuration
+![postfix](./img/1.2.jpg)
 
 ## 2. copy file main.cf
 ```cp /etc/postfix/main.cf /etc/postfix/main.cf.bak```
+
+![postfix](./img/2.jpg)
 
 ## 3. Edit file main.cf
 ```code /etc/postfix/main.cf```
@@ -53,8 +59,12 @@ digunakan untuk memperbarui basis data alias alamat email dalam sistem. Dalam si
 
 ```sudo newaliases```
 
+![postfix](./img/4.png)
+
 ## 5. Restart postfix
 ```systemctl restart postfix```
+
+![postfix](./img/5.png)
 
 ## 6. Menambahkan konfigurasi anti spam
 buka file main.cf
@@ -73,19 +83,24 @@ smtpd_sender_restrictions = permit_mynetworks, reject_unknown_sender_domain,reje
 # not registered with FQDN when your SMTP server receives HELO command
 smtpd_helo_restrictions = permit_mynetworks, reject_unknown_hostname,reject_non_fqdn_hostname, reject_invalid_hostname, permit
 ```
+![postfix](./img/6.1.jpg)
 
 restart postfix
 ```systemctl restart postfix```
 
+![postfix](./img/6.2.jpg)
+
 ## 7. Install Dovecot
 ```sudo apt -y install dovecot-core dovecot-pop3d dovecot-imapd```
+
+![dovecot](./img/7.jpg)
 
 ## 8. Konfigurasi Dovecot
 - Edit file /etc/dovecot/dovecot.conf
     ```sudo nano /etc/dovecot/dovecot.conf```
     uncomment baris 30
 
-    ![dovecot](./img/1.jpg)
+    ![dovecot](./img/8.1.jpg)
 
 - Edit file /etc/dovecot/conf.d/10-auth.conf
     ```sudo nano /etc/dovecot/conf.d/10-auth.conf```
@@ -93,14 +108,14 @@ restart postfix
 
     ubah di baris 100 menjadi ```disable_plaintext_auth = plain login```
 
-    ![dovecot](./img/2.jpg)
-    ![dovecot](./img/3.jpg)
+    ![dovecot](./img/8.2.jpg)
+    ![dovecot](./img/8.3.jpg)
 
 - Edit file  /etc/dovecot/conf.d/10-mail.conf
   ```sudo nano /etc/dovecot/conf.d/10-mail.conf```
     uncomment baris 30 dan ubah menjadi ```mail_location = maildir:~/Maildir```
 
-    ![dovecot](./img/4.jpg)
+    ![dovecot](./img/8.4.jpg)
 
 - Edit file /etc/dovecot/conf.d/10-master.conf
     ```sudo nano /etc/dovecot/conf.d/10-master.conf```
@@ -114,7 +129,7 @@ restart postfix
     }
     ```
 
-    ![dovecot](./img/5.jpg)
+    ![dovecot](./img/8.5.jpg)
 
 ## 9. Restart Dovecot
 ```systemctl restart dovecot```
@@ -125,4 +140,4 @@ Pastikan Service MariaDB(MySQL), IMAP, POP3, DNS(domain), IMAPS, POP3S, SSH, Pos
 
 ## 11. Testing
 ``` telnet mail.kelompok3.local 22 ``` (gunakan port yang sesuai dengan port ssh yang dibuka)
-    ![telnet](./img/6.jpg)
+    ![telnet](./img/9.png)
