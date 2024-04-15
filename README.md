@@ -40,7 +40,7 @@ Repository untuk menyimpan project dan tugas di mata kuliah workshop administras
 -  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-Tugas2">Laporan Tugas 2 SysAdmin 2</a>
 -  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-Tugas3">Laporan Tugas 3 Mikrotik</a>
 -  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-Tugas4">Laporan Tugas 4 DNS dan Ekosistem Internet</a>
--  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-Tugas5">Laporan Tugas 5 Instalasi dan Konfigurasi Web Server, Database Server, dan Mail Server</a>"
+-  <a href="https://github.com/nadiaalnd/WAJ/tree/main/WAJ-Tugas5">Laporan Tugas 5 Instalasi dan Konfigurasi Web Server, Database Server, dan Mail Server</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
