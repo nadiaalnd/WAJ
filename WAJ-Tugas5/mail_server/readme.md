@@ -85,7 +85,7 @@ restart postfix
     ```sudo nano /etc/dovecot/dovecot.conf```
     uncomment baris 30
 
-    ![dovecot](./img/1.png)
+    ![dovecot](./img/1.jpg)
 
 - Edit file /etc/dovecot/conf.d/10-auth.conf
     ```sudo nano /etc/dovecot/conf.d/10-auth.conf```
@@ -93,14 +93,14 @@ restart postfix
 
     ubah di baris 100 menjadi ```disable_plaintext_auth = plain login```
 
-    ![dovecot](./img/2.png)
-    ![dovecot](./img/3.png)
+    ![dovecot](./img/2.jpg)
+    ![dovecot](./img/3.jpg)
 
 - Edit file  /etc/dovecot/conf.d/10-mail.conf
   ```sudo nano /etc/dovecot/conf.d/10-mail.conf```
     uncomment baris 30 dan ubah menjadi ```mail_location = maildir:~/Maildir```
 
-    ![dovecot](./img/4.png)
+    ![dovecot](./img/4.jpg)
 
 - Edit file /etc/dovecot/conf.d/10-master.conf
     ```sudo nano /etc/dovecot/conf.d/10-master.conf```
@@ -114,7 +114,7 @@ restart postfix
     }
     ```
 
-    ![dovecot](./img/5.png)
+    ![dovecot](./img/5.jpg)
 
 ## 9. Restart Dovecot
 ```systemctl restart dovecot```
@@ -125,4 +125,4 @@ Pastikan Service MariaDB(MySQL), IMAP, POP3, DNS(domain), IMAPS, POP3S, SSH, Pos
 
 ## 11. Testing
 ``` telnet mail.kelompok3.local 22 ``` (gunakan port yang sesuai dengan port ssh yang dibuka)
-    ![telnet](./img/6.png)
+    ![telnet](./img/6.jpg)

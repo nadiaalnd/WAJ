@@ -9,4 +9,4 @@
 ---
 
 ### Versi Demo PPT Soal Nomor 2 :
-[![Preview PPT](images/demo_ppt.png)](https://waj-slides.vercel.app/)
+[![Preview PPT](images/demo_ppt.jpg)](https://waj-slides.vercel.app/)

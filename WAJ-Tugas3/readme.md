@@ -4,7 +4,7 @@
 </div>
 <br />
 <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png" alt="Logo PENS">
+  <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.jpg" alt="Logo PENS">
   <h3 style="text-align: center;">Disusun Oleh : <br>Kelompok 3</h3>
   <p style="text-align: center;">
     <strong>Ade Hafis Rabbani (3122500001)</strong><br>

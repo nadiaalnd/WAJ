@@ -4,7 +4,7 @@
 </div>
 <br />
 <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png" alt="Logo PENS">
+  <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.jpg" alt="Logo PENS">
   <h3 style="text-align: center;">Disusun Oleh : <br>Kelompok 3</h3>
   <p style="text-align: center;">
     <strong>Ade Hafis Rabbani (3122500001)</strong><br>
@@ -34,20 +34,20 @@ Hal pertama yang harus dilakukan adalah mengetahui ruang yang digunakan oleh dis
 Ringkasan penggunaan ruang disk untuk setiap pemsangan sistem (disk dan partisi) dengan perintah
   df -h
   
-![Gambar 8.6.1-1](images/8.6.1-1.png)
+![Gambar 8.6.1-1](images/8.6.1-1.jpg)
 
 #### b. List your repertories sorted by decreasing size
 Lihat direktori anda yang berukuran besar dengan perintah du dan sort (satuan yang digunakan adalah megabyte):
   du -ms * | sort -nr
   
-![Gambar 8.6.1-2](images/8.6.1-2.png)
+![Gambar 8.6.1-2](images/8.6.1-2.jpg)
 
 #### c. Ncdu
 Tools untuk melakukan analisis ruang disk dalam mode console. Gunakan perintah ncdu untuk menjalankan di terminal.
   sudo apt update && sudo apt install ncdu
   
-![Gambar 8.6.1-3](images/8.6.1-3.png)
-![Gambar 8.6.1-4](images/8.6.1-4.png)
+![Gambar 8.6.1-3](images/8.6.1-3.jpg)
+![Gambar 8.6.1-4](images/8.6.1-4.jpg)
 
 _Ncdu dijalankan di folder pribadi pengguna_
 
@@ -55,8 +55,8 @@ _Ncdu dijalankan di folder pribadi pengguna_
 Analisis ruang disk dalam mode grafis yang terintegrasi dengan Gnome, tetapi tersedia di environments lain.
   sudo apt update && sudo apt install baobab
   
-![Gambar 8.6.1-5](images/8.6.1-5.png)
-![Gambar 8.6.1.-6](images/8.6.1.-6.png)
+![Gambar 8.6.1-5](images/8.6.1-5.jpg)
+![Gambar 8.6.1.-6](images/8.6.1.-6.jpg)
 
 _Baobab: Analisis ruang disk pada Gnome_
 
@@ -64,30 +64,30 @@ _Baobab: Analisis ruang disk pada Gnome_
 **Apt/aptitude/dpkg** adalah pengelola paket Debian. Ketika menginstall sebuah paket, file **archive- source/deb**-nya akan disimpan pada sistem di folder **/var/cache/apt/arsip/** untuk memungkinkan penginstalan ulang tanpa koneksi internet.
   sudo apt clean
   
-![Gambar 8.6.2-1](images/8.6.2-1.png)
+![Gambar 8.6.2-1](images/8.6.2-1.jpg)
 
 Setelah cache dari paket-paket yang terinstal dibersihkan, kita juga dapat menghapus paket-paket yang tidak berguna dari sistem dan juga file-file konfigurasi. Ingatlah untuk memeriksa dengan teliti daftar paket yang akan dihapus sebelum dijalankan.
   sudo apt autoremove –purge
   
-![Gambar 8.6.2-2](images/8.6.2-2.png)
+![Gambar 8.6.2-2](images/8.6.2-2.jpg)
 
 Jika telah mengupgrade sistem, ada kemungkinan beberapa paket tidak lagi tersedia pada repositori yang baru dikarenakan paket-paket tersebut sudah usang. Untuk membuat daftar dan menghapus paket-paket ini, gunakan apt dan ingatlah untuk memeriksa daftar paket yang akan dihapus.
   sudo apt list ‘?obsolete’
   sudo apt remove ‘?obsolete’
   
-![Gambar 8.6.2-3](images/8.6.2-3.png)
+![Gambar 8.6.2-3](images/8.6.2-3.jpg)
 
 Terakhir, untuk membuat daftar dan membersihkan file konfigurasi yang tetap ada meskipun aplikasi telah dihapus.
   dpkg –list | awk ‘/^rc/ {print $2}’ 
   sudo apt purge $(dpkg –list | awk ‘/^rc/ {print $2}’)
   
-![Gambar 8.6.2-4](images/8.6.2-4.png)
+![Gambar 8.6.2-4](images/8.6.2-4.jpg)
 
 Kita dapat menginstal tool deborphan yang berisi daftar paket-paket yatim piatu (paket-paket yang tidak bergantung pada paket lain) pada sistem. Ingatlah untuk memeriksa dengan seksama daftar paket yang akan dihapus.
   sudo apt install deborphan, echo $(deborphan)
   sudo apt autoremove –purge $(deborphan)
   
-![Gambar 8.6.2-5](images/8.6.2-5.png)
+![Gambar 8.6.2-5](images/8.6.2-5.jpg)
 
 ### 3. Emptying The Trash Bin
 Tiga sampah yang berbeda dan harus dipertimbangkan:
@@ -102,14 +102,14 @@ Tiga sampah yang berbeda dan harus dipertimbangkan:
 #### c. Sampah Eksternal:
 terletak di disk eksternal dan biasanya bernama **'/media/y- our_id/your_disk/.Trash_1000'**, di mana your_id sesuai dengan nama login.
 
-![Gambar 8.6.3](images/8.6.3.png)
+![Gambar 8.6.3](images/8.6.3.jpg)
 
 
 ### 4. Purging Application Caches
 Beberapa aplikasi yang menggunakan folder cache untuk menyimpan gambar, video, dan berbagai informasi lainnya agar dapat berjalan lebih cepat. Biasanya data ini tidak menghabiskan terlalu banyak ruang disk, namun jika kita mendeteksi bahwa sebuah folder menjadi terlalu besar, jangan ragu untuk menghapusnya.
    rm -Rf ~/.cache/*
    
-![Gambar 8.6.4](images/8.6.4.png)
+![Gambar 8.6.4](images/8.6.4.jpg)
 
 Setiap aplikasi memiliki caranya sendiri untuk mengelola cache-nya. ada yang menghapusnya secara sistematis ketika ditutup, ada yang menyimpan datanya di folder /tmp, yang akan dihapus saat sesi logout, ada juga yang menyimpan semua informasinya di folder tertentu.
 
@@ -117,6 +117,6 @@ Setiap aplikasi memiliki caranya sendiri untuk mengelola cache-nya. ada yang men
 Setiap kali membuka folder yang berisi gambar atau video, thumbnail dibuat untuk mewakili file grafis ini. Thumbnail ini disimpan dalam folder tertentu untuk digunakan kembali, daripada dipaksa untuk menghitung ulang setiap kali Anda mengakses file semacam ini. Masalahnya akan muncul ketika menghapus file grafis, karena thumbnail-nya disimpan dalam sistem, dan ini menyebabkan sejumlah ruang disk terbuang untuk menyimpan thumbnail yang sudah tidak terpakai. Untuk menghapusnya, cukup dengan menghapus folder yang bersangkutan.
    rm -Rf ~/.thumbnails
    
-![Gambar 8.6.5](images/8.6.5.png)
+![Gambar 8.6.5](images/8.6.5.jpg)
 
 Folder ini akan dibuat lagi, pada saat sistem perlu menyimpan thumbnail yang baru dibuat.

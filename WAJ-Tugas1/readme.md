@@ -4,7 +4,7 @@
 </div>
 <br />
 <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png" alt="Logo PENS">
+  <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.jpg" alt="Logo PENS">
   <h3 style="text-align: center;">Disusun Oleh : <br>Kelompok 3</h3>
   <p style="text-align: center;">
     <strong>Ade Hafis Rabbani (3122500001)</strong><br>
@@ -41,7 +41,7 @@
 
 1. Buka aplikasi **Oracle VM VirtualBox Manager**, kemudian pilih **New**.
 
-    ![](images/Aspose.Words.e04077e7-aee8-44ef-a14f-38cb7e48fb94.001.png)
+    ![](images/Aspose.Words.e04077e7-aee8-44ef-a14f-38cb7e48fb94.001.jpg)
 
 2. Sesuaikan **Name** dan **Folder**. Pada bagian Iso Image, pilih file **ISO Debian** yang sudah di download. Click
    pada bagian **Skip Unattended Installation** dan **Next**.
@@ -285,12 +285,12 @@ File /etc/group adalah file yang menyimpan informasi tentang grup pengguna pada 
     shellnya tidak berubah. Apabila hanya mengetikkan perintah **su** saja, maka akan beralih ke root dengan menginputkan
     password terlebih dahulu seperti contoh dibawah ini.
 
-    ![](images/Aspose.Words.e04077e7-aee8-44ef-a14f-38cb7e48fb94.053.png)
+    ![](images/Aspose.Words.e04077e7-aee8-44ef-a14f-38cb7e48fb94.053.jpg)
 
 2. Perintah **su -** memiliki fungsi yang sama dengan perintah **su**, tetapi dengan hak akses penuh root dan membuka
    shell baru dengan lingkungan default user yg dituju. Dibawah ini merupakan contoh penggunaan perintah **su -**.
 
-    ![](images/Aspose.Words.e04077e7-aee8-44ef-a14f-38cb7e48fb94.054.png)
+    ![](images/Aspose.Words.e04077e7-aee8-44ef-a14f-38cb7e48fb94.054.jpg)
 
 ### 5. Jelaskan fungsi dari "sudo" !
 
@@ -308,7 +308,7 @@ akan meminta inputan password, setiap user biasanya menjalankan perintah selama 
    - Jalankan perintah su - untuk masuk sebagai root.
    - Masukkan password root.
    
-   ![](images/Aspose.Words.e04077e7-aee8-44ef-a14f-38cb7e48fb94.055.png)
+   ![](images/Aspose.Words.e04077e7-aee8-44ef-a14f-38cb7e48fb94.055.jpg)
 2. Edit File Sudoers 
    - Jalankan perintah visudo untuk membuka file konfigurasi sudo.
      
@@ -320,7 +320,7 @@ akan meminta inputan password, setiap user biasanya menjalankan perintah selama 
    > ```
    (ganti username dengan nama user anda)
      
-   ![](images/Aspose.Words.e04077e7-aee8-44ef-a14f-38cb7e48fb94.057.png)
+   ![](images/Aspose.Words.e04077e7-aee8-44ef-a14f-38cb7e48fb94.057.jpg)
 3. Langkah 3: Simpan dan Keluar dari File Sudoers
    - Tekan tombol CTRL + X untuk keluar dari mode insert.
    - Tekan huruf Y dan tekan Enter untuk menyimpan dan keluar dari file sudoers.

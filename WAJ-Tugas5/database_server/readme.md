@@ -27,31 +27,31 @@ Isikan konfigurasi inisial seperti berikut:
 ```sudo mysql -u root -p```
 
 masukkan password yang sudah di set pada saat konfigurasi inisialisasi
-![login](./img/2.png)
+![login](./img/2.jpg)
 ## 5. Uji Coba Database
 - tampilkan hak akses user root
 
     ```show grants for 'root'@'localhost';```
 
-    ![show grants](./img/3.png)
+    ![show grants](./img/3.jpg)
 
 - tampilkan user,host dan password dari db mysql dan tabel user
 
     ```select user,host,password from mysql.user;```
 
-    ![select user](./img/4.png)
+    ![select user](./img/4.jpg)
 
 - tampilkan database yang ada
 
     ```show databases;```
 
-    ![show databases](./img/5.png)
+    ![show databases](./img/5.jpg)
 
 - buat database baru
 
     ```create database test;```
 
-    ![create database](./img/6.png)
+    ![create database](./img/6.jpg)
 
 - buat tabel baru
 
@@ -59,19 +59,19 @@ masukkan password yang sudah di set pada saat konfigurasi inisialisasi
 
     - ```create table test.test_table (id int, name varchar(50), address varchar(50), primary key (id));```
 
-    ![create table](./img/7.png)
+    ![create table](./img/7.jpg)
 
 - tambahkan data ke tabel
 
     ```insert into test_table values (1, 'test', 'test address');```
 
-    ![insert data](./img/8.png)
+    ![insert data](./img/8.jpg)
 
 - tampilkan data dari tabel
 
     ```select * from test_table;```
 
-    ![select data](./img/9.png)
+    ![select data](./img/9.jpg)
 
 - keluar dari database
 

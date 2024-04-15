@@ -4,7 +4,7 @@
 </div>
 <br />
 <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png" alt="Logo PENS">
+  <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.jpg" alt="Logo PENS">
   <h3 style="text-align: center;">Disusun Oleh : <br>Kelompok 3</h3>
   <p style="text-align: center;">
     <strong>Ade Hafis Rabbani (3122500001)</strong><br>
@@ -26,7 +26,7 @@
 ### 1. Apa itu Mikrotik?
 **Pengertian Mikrotik**
 
-![Gambar mikrotik](images/mikrotik.png)
+![Gambar mikrotik](images/mikrotik.jpg)
 
 Mikrotik merupakan sebuah sistem operasi berbasis perangkat lunak (software) yang digunakan untuk mengubah komputer menjadi sebuah router dalam suatu jaringan. Menggunakan sistem operasi yang berbasis Linux dan menjadi dasar bagi router jaringan. Sistem operasi ini sangat ideal untuk mengelola administrasi jaringan komputer dengan berbagai skala, mulai dari kecil hingga besar.
 
