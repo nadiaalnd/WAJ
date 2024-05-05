@@ -35,7 +35,7 @@ Merubah DNS Servers di mikrotik menjadi ```10.10.10.1```
 
 ![thunderbird](./img/8.jpg)
 
-## 7. Testing
+## 7. Testing (Tambahan)
 - Pengujian Web Server melalui client.
   ![thunderbird](./img/10.jpg)
 

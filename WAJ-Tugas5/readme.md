@@ -14,13 +14,14 @@
   <hr>
 </div>
 
-| Nomor | File                                 |
-|-------|--------------------------------------|
-| 1     | [konfigurasi NTP Server](./network_time/readme.md) |
-| 2     | [Konfigurasi Web Server](./web_server/readme.md) |
-| 3     | [Konfigurasi Database Server](./database_server/readme.md) |
-| 4     | [Konfigurasi phpmyadmin](./phpmyadmin/readme.md) |
-| 5     | [Konfigurasi mail server](./mail_server/readme.md) |
-| 6     | [Konfigurasi thunderbird](thunderbird/readme.md) |
+| Nomor | File                                                                |
+|-------|---------------------------------------------------------------------|
+| 1     | [Konfigurasi NTP Server](./network_time/readme.md)                  |
+| 2     | [Konfigurasi Web Server](./web_server/readme.md)                    |
+| 3     | [Konfigurasi Database Server](./database_server/readme.md)          |
+| 4     | [Konfigurasi phpmyadmin](./phpmyadmin/readme.md)                    |
+| 5     | [Konfigurasi mail server](./mail_server/readme.md)                  |
+| 6     | [Konfigurasi thunderbird](./thunderbird/readme.md)                  |
+| 7     | [Elektronic Mail (Tambahan Minggu 10)](./electronic_mail/readme.md) |
 
 ---
