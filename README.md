@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="../image/LogoPens.png" alt="Logo PENS">
+  <img src="./image/LogoPens.png" alt="Logo PENS">
 
   <h3 align="center">Workshop Administrasi Jaringan</h3>
 

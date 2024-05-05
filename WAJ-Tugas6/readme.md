@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 style="text-align: center;font-weight: bold">Praktikum 5<br>Instalasi dan Konfigurasi Web Server, Database Server, dan Mail Server</h1>
+  <h1 style="text-align: center;font-weight: bold">Praktikum 6<br>Arsitektur Web Browser dan Web Serser</h1>
   <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
 <br />
