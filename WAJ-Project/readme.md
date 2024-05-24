@@ -1,12 +1,10 @@
-﻿<div style="align-content: center; text-align: center">
-   <h1 style="text-align: center; font-weight: bold;">
-      Project Charter Container Based App<br>
-      Mobile Apps Point Of Sales (POS) with Payment Gateway
-   </h1>
-   <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
+﻿<div align="center">
+  <h1 style="text-align: center;font-weight: bold">roject Charter Container Based App<br>
+      Mobile Apps Point Of Sales (POS) with Payment Gateway</h1>
+  <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
 <br />
-<div style="align-content: center; text-align: center">
+<div align="center">
   <img src="../image/LogoPens.png" alt="Logo PENS">
   <h3 style="text-align: center;">Disusun Oleh :</h3>
   <div style="align: center;">
