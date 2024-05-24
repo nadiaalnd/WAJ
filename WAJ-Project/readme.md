@@ -1,5 +1,5 @@
 ﻿<div align="center">
-  <h1 style="text-align: center;font-weight: bold">roject Charter Container Based App<br>
+  <h1 style="text-align: center;font-weight: bold">Project Charter Container Based App<br>
       Mobile Apps Point Of Sales (POS) with Payment Gateway</h1>
   <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
