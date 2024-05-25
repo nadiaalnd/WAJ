@@ -215,7 +215,7 @@
       - **Pengujian Fungsional**: Memastikan bahwa semua fitur aplikasi berfungsi sesuai yang diharapkan.
       - **Pengujian Integrasi**: Menguji integrasi antara komponen-komponen aplikasi seperti server, database, dan aplikasi mobile.
       - **Pengujian Keamanan**: Melakukan pengujian keamanan untuk mengidentifikasi dan memperbaiki kerentanan yang ada.
-   5. ## Implementasi
+   5. ## Deployment
       - **Deploy Container**: Menggunakan Docker untuk membangun container dan mendistribusikan aplikasi.
       - **Monitor dan Manajemen**: Memantau kinerja aplikasi secara terus-menerus dan melakukan manajemen ketika diperlukan.
    6. ## Pemeliharaan dan Optimalisasi
