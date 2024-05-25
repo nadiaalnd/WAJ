@@ -55,6 +55,7 @@
       <ol>
         <li><a href="#latar-belakang">Latar Belakang</a></li>
         <li><a href="#pemanfaatan-teknologi">Pemanfaatan Teknologi</a></li>
+        <li><a href="#diagram-teknologi">Diagram Teknologi</a></li>
       </ol>
     </li>
     <li>
@@ -95,53 +96,60 @@
 ---
 
 # Pendahuluan
+   1. ## Latar Belakang
+        Proyek ini bertujuan untuk mengembangkan aplikasi mobile Point of Sales (POS) yang bertujuan untuk membantu pengguna dalam mengelola transaksi penjualan pada bisnis mereka dengan efisien.
+       
+        Aplikasi ini akan menyediakan fitur-fitur seperti manajemen stok barang, pembayaran, pelaporan penjualan, dan integrasi dengan payment gateway untuk memudahkan pembayaran elektronik. 
+       
+        Aplikasi ini dirancang untuk membantu toko ritel, kafe, restoran, dan jenis usaha lainnya dalam meningkatkan efisiensi operasional, mengurangi kesalahan manual, dan menyediakan data penjualan secara real-time.
 
-1. ## Latar Belakang 
-   Proyek ini bertujuan untuk mengembangkan aplikasi mobile Point of Sales (POS) yang bertujuan untuk membantu pengguna dalam mengelola transaksi penjualan pada bisnis mereka dengan efisien.
-   
-   Aplikasi ini akan menyediakan fitur-fitur seperti manajemen stok barang, pembayaran, pelaporan penjualan, dan integrasi dengan payment gateway untuk memudahkan pembayaran elektronik. 
-   
-   Aplikasi ini dirancang untuk membantu toko ritel, kafe, restoran, dan jenis usaha lainnya dalam meningkatkan efisiensi operasional, mengurangi kesalahan manual, dan menyediakan data penjualan secara real-time.
+   2. ## Pemanfaatan Teknologi
+      Dalam membangun proyek ini, kami menggunakan beberapa teknologi yang menunjang pengembangan dan operasi aplikasi ini, yaitu:
+      1. ### Express.js
 
-2. ## Pemanfaatan Teknologi
-   Dalam membangun proyek ini, kami menggunakan beberapa teknologi yang menunjang pengembangan dan operasi aplikasi ini, yaitu:
-
-   1. ### Express.js
-
-      **Express.js** adalah sebuah framework aplikasi web Node.js yang minimal dan fleksibel, cocok untuk membangun backend server dalam aplikasi mobile. Dengan Express.js, pengembang dapat dengan mudah membuat API yang diperlukan untuk aplikasi mobile, menangani permintaan HTTP, dan mengelola respons dari server.
+         **Express.js** adalah sebuah framework aplikasi web Node.js yang minimal dan fleksibel, cocok untuk membangun backend server dalam aplikasi mobile. Dengan Express.js, pengembang dapat dengan mudah membuat API yang diperlukan untuk aplikasi mobile, menangani permintaan HTTP, dan mengelola respons dari server.
       
-      Dalam proyek aplikasi mobile ini, Express.js akan digunakan untuk:
-      - **Membuat API Backend**: Mengatur endpoint untuk berkomunikasi dengan aplikasi mobile.
-      - **Menangani Permintaan**: Mengelola permintaan dari aplikasi mobile dan memberikan respons yang sesuai.
-      - **Autentikasi dan Otorisasi**: Menyediakan mekanisme untuk autentikasi pengguna dan otorisasi akses ke data.
-      - **Integrasi dengan Database**: Berinteraksi dengan database MySQL untuk mengambil dan menyimpan data yang diperlukan oleh aplikasi mobile.
+         Dalam proyek aplikasi mobile ini, Express.js akan digunakan untuk:
+         - **Membuat API Backend**: Mengatur endpoint untuk berkomunikasi dengan aplikasi mobile.
+         - **Menangani Permintaan**: Mengelola permintaan dari aplikasi mobile dan memberikan respons yang sesuai.
+         - **Autentikasi dan Otorisasi**: Menyediakan mekanisme untuk autentikasi pengguna dan otorisasi akses ke data.
+         - **Integrasi dengan Database**: Berinteraksi dengan database MySQL untuk mengambil dan menyimpan data yang diperlukan oleh aplikasi mobile.
 
-   2. ### MySQL
+      2. ### MySQL
 
-      **MySQL** adalah sistem manajemen basis data relasional (RDBMS) yang akan digunakan untuk menyimpan dan mengelola data dalam proyek aplikasi mobile ini. MySQL merupakan pilihan yang ideal untuk aplikasi mobile karena kemampuannya dalam menyediakan penyimpanan data yang terstruktur dan handal. 
+         **MySQL** adalah sistem manajemen basis data relasional (RDBMS) yang akan digunakan untuk menyimpan dan mengelola data dalam proyek aplikasi mobile ini. MySQL merupakan pilihan yang ideal untuk aplikasi mobile karena kemampuannya dalam menyediakan penyimpanan data yang terstruktur dan handal. 
       
-      Dalam proyek ini, MySQL akan digunakan untuk:
-      - **Penyimpanan Data Pengguna**: Menyimpan informasi pengguna seperti nama dan kata sandi.
-      - **Penyimpanan Data Transaksi**: Menyimpan detail transaksi penjualan yang dilakukan melalui aplikasi mobile.
-      - **Manajemen Inventaris**: Menyimpan informasi tentang produk, stok, dan harga.
+         Dalam proyek ini, MySQL akan digunakan untuk:
+         - **Penyimpanan Data Pengguna**: Menyimpan informasi pengguna seperti nama dan kata sandi.
+         - **Penyimpanan Data Transaksi**: Menyimpan detail transaksi penjualan yang dilakukan melalui aplikasi mobile.
+         - **Manajemen Inventaris**: Menyimpan informasi tentang produk, stok, dan harga.
 
-   3. ### Payment Gateway Integration
+      3. ### Payment Gateway Integration
 
-      **Integrasi _Payment Gateway_** memungkinkan aplikasi mobile untuk menerima pembayaran online dari pengguna melalui berbagai metode pembayaran elektronik seperti kartu kredit, e-wallet, dan transfer bank.
+         **Integrasi _Payment Gateway_** memungkinkan aplikasi mobile untuk menerima pembayaran online dari pengguna melalui berbagai metode pembayaran elektronik seperti kartu kredit, e-wallet, dan transfer bank.
       
-      Dalam proyek ini, integrasi payment gateway akan mencakup:
-      - **Pemrosesan Pembayaran**: Memungkinkan pengguna untuk melakukan pembayaran melalui aplikasi mobile menggunakan metode pembayaran yang disediakan.
-      - **Keamanan Transaksi**: Memastikan bahwa transaksi pembayaran dilakukan secara aman dan terenkripsi.
-      - **Konfirmasi Pembayaran**: Memastikan bahwa pembayaran berhasil dan mengirimkan konfirmasi pembayaran kepada pengguna.
+         Dalam proyek ini, integrasi payment gateway akan mencakup:
+         - **Pemrosesan Pembayaran**: Memungkinkan pengguna untuk melakukan pembayaran melalui aplikasi mobile menggunakan metode pembayaran yang disediakan.
+         - **Keamanan Transaksi**: Memastikan bahwa transaksi pembayaran dilakukan secara aman dan terenkripsi.
+         - **Konfirmasi Pembayaran**: Memastikan bahwa pembayaran berhasil dan mengirimkan konfirmasi pembayaran kepada pengguna.
 
-   4. ### Docker
+      4. ### Docker
 
-      **Docker** adalah platform yang akan digunakan untuk mengembangkan, menguji, dan menjalankan aplikasi mobile dalam lingkungan yang terisolasi dan konsisten.
+         **Docker** adalah platform yang akan digunakan untuk mengembangkan, menguji, dan menjalankan aplikasi mobile dalam lingkungan yang terisolasi dan konsisten.
       
-      Dalam proyek ini, Docker akan digunakan untuk:
-      - **Pengembangan Lokal**: Menyediakan lingkungan pengembangan yang konsisten dan mudah digunakan di komputer pengembang.
-      - **Uji Coba Aplikasi**: Memastikan bahwa aplikasi berjalan dengan baik dalam lingkungan yang terisolasi sebelum di deploy ke lingkungan produksi.
-      - **Deploy Aplikasi**: Memudahkan proses deploy aplikasi mobile ke server produksi dengan memastikan bahwa semua dependensi terpenuhi dan lingkungan berjalan dengan baik.
+         Dalam proyek ini, Docker akan digunakan untuk:
+         - **Pengembangan Lokal**: Menyediakan lingkungan pengembangan yang konsisten dan mudah digunakan di komputer pengembang.
+         - **Uji Coba Aplikasi**: Memastikan bahwa aplikasi berjalan dengan baik dalam lingkungan yang terisolasi sebelum di deploy ke lingkungan produksi.
+         - **Deploy Aplikasi**: Memudahkan proses deploy aplikasi mobile ke server produksi dengan memastikan bahwa semua dependensi terpenuhi dan lingkungan berjalan dengan baik.
+
+   3. ##  Diagram Teknologi
+      ![Gambar Teknologi](../image/teknologi.png)
+
+      Diagram di atas menggambarkan arsitektur proyek, di mana: 
+      - aplikasi mobile berkomunikasi dengan server backend yang dibangun menggunakan Express.js. 
+      - Server backend akan berinteraksi dengan database MySQL untuk menyimpan dan mengambil data. 
+      - Server backend juga akan berhubungan dengan payment gateway untuk pemrosesan pembayaran. 
+      - Docker digunakan untuk menjalankan aplikasi dalam lingkungan yang terisolasi.
 
 # Ruang Lingkup
    1. ## Database
