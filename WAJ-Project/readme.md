@@ -171,6 +171,8 @@
 
    2. ## Penjelasan
 
+      Diagram di atas menunjukkan bagaimana komponen-komponen utama aplikasi akan dikemas ke dalam container Docker. Setiap container akan berisi satu komponen aplikasi, seperti server backend, database, dan aplikasi mobile. Penggunaan Docker memudahkan dalam pengembangan, pengujian, dan deployment aplikasi dalam lingkungan yang terisolasi.
+
 # Tugas Tim
    1. ## UI/UX Designer
       - **Nama :**
