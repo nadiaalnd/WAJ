@@ -174,30 +174,30 @@
 # Tugas Tim
    1. ## UI/UX Designer
       - **Nama :**
+        1. Nadila Aulya Salsabila Mirdianti
       - **Tugas :**
          1. Membuat wireframe dan prototype. 
          2. Mendesain antarmuka dan pengalaman pengguna untuk aplikasi mobile
          3. Melakukan user testing dan iterasi desain berdasarkan feedback.
    2. ## Backend Developer
       - **Nama :**
+        1. Akmal Zidani Fikri
       - **Tugas :**
         1. Mengembangkan dan memelihara API menggunakan Express.js, serta mengintegrasikan payment gateway. 
         2. Merancang API endpoint untuk transaksi.
    3. ## Mobile Developer
       - **Nama :**
+        1. Leody Zelvon Herliansa
+        2. Bagus Bimo Prakoso
       - **Tugas :**
         1. Mengembangkan aplikasi mobile yang user-friendly untuk Android dan iOS. 
         2. Mengimplementasikan fitur scan barcode.
-   4. ## Database Administrator (DBA)
+   4. ## DevOps Engineer
       - **Nama :**
+        1. Ade Hafis Rabbani
       - **Tugas :**
-        1. Merancang dan mengelola database MySQL, memastikan ketersediaan dan integritas data. 
-        2. Menjaga backup rutin dan recovery plan.
-   5. ## DevOps Engineer
-        - **Nama :**
-        - **Tugas :**
-          1. Mengelola proses deployment menggunakan Docker.
-          2. Memantau kinerja aplikasi dan melakukan pemeliharaan rutin.
+        1. Mengelola proses deployment menggunakan Docker.
+        2. Memantau kinerja aplikasi dan melakukan pemeliharaan rutin.
 
 # Tahap Pelaksanaan
    1. ## Perencanaan
