@@ -166,7 +166,8 @@
          
 
    3. ##  Diagram Teknologi
-      ![Gambar Diagram Arsitektur](/image/design-arsitektur.jpg)
+      
+      ![Gambar Diagram Arsitektur](./image/design-arsitektur.jpg)
 
       Diagram di atas menggambarkan arsitektur proyek, di mana:
 
@@ -197,7 +198,7 @@
 
 # DESAIN SISTEM
    1. ## Desain Sistem
-      ![Gambar Design System](/image/design-system.jpg)
+      ![Gambar Design System](./image/design-system.jpg)
 
    2. ## Penjelasan
         1. Layer 1 : Aplikasi
