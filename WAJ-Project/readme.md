@@ -55,16 +55,14 @@
       <ol>
         <li><a href="#latar-belakang">Latar Belakang</a></li>
         <li><a href="#pemanfaatan-teknologi">Pemanfaatan Teknologi</a></li>
-        <li><a href="#diagram-teknologi">Diagram Teknologi</a></li>
+        <li><a href="#diagram-arsitektur">Diagram Arsitektur</a></li>
       </ol>
     </li>
     <li>
       <a href="#ruang-lingkup">Ruang Lingkup</a>
       <ol>
-        <li><a href="#database">Database</a></li>
-        <li><a href="#server">Server</a></li>
-        <li><a href="#mobile-apps">Mobile Apps</a></li>
-        <li><a href="#deployment">Deployment</a></li>
+        <li><a href="#aplikasi">Aplikasi</a></li>
+        <li><a href="#monitoring-system">Monitoring System</a></li>
       </ol>
     </li>
     <li>
@@ -74,7 +72,13 @@
         <li><a href="#penjelasan">Penjelasan</a></li>
       </ol>
     </li>
-    <li><a href="#tugas-tim">Tugas Tim</a></li>
+    <li>
+      <a href="#tugas-tim">Tugas Tim</a>
+      <ol>
+        <li><a href="#role">Role</a></li>
+        <li><a href="#pembagian-tugas">Pembagian Tugas</a></li>
+      </ol>
+    </li>
     <li>
       <a href="#tahap-pelaksanaan">Tahap Pelaksanaan</a>
       <ol>
@@ -112,7 +116,6 @@
          Dalam proyek aplikasi mobile ini, Express.js akan digunakan untuk:
          - **Membuat API Backend**: Mengatur endpoint untuk berkomunikasi dengan aplikasi mobile.
          - **Menangani Permintaan**: Mengelola permintaan dari aplikasi mobile dan memberikan respons yang sesuai.
-         - **Autentikasi dan Otorisasi**: Menyediakan mekanisme untuk autentikasi pengguna dan otorisasi akses ke data.
          - **Integrasi dengan Database**: Berinteraksi dengan database MySQL untuk mengambil dan menyimpan data yang diperlukan oleh aplikasi mobile.
 
       2. ### MySQL
@@ -120,7 +123,6 @@
          **MySQL** adalah sistem manajemen basis data relasional (RDBMS) yang akan digunakan untuk menyimpan dan mengelola data dalam proyek aplikasi mobile ini. MySQL merupakan pilihan yang ideal untuk aplikasi mobile karena kemampuannya dalam menyediakan penyimpanan data yang terstruktur dan handal. 
       
          Dalam proyek ini, MySQL akan digunakan untuk:
-         - **Penyimpanan Data Pengguna**: Menyimpan informasi pengguna seperti nama dan kata sandi.
          - **Penyimpanan Data Transaksi**: Menyimpan detail transaksi penjualan yang dilakukan melalui aplikasi mobile.
          - **Manajemen Inventaris**: Menyimpan informasi tentang produk, stok, dan harga.
 
@@ -130,7 +132,6 @@
       
          Dalam proyek ini, integrasi payment gateway akan mencakup:
          - **Pemrosesan Pembayaran**: Memungkinkan pengguna untuk melakukan pembayaran melalui aplikasi mobile menggunakan metode pembayaran yang disediakan.
-         - **Keamanan Transaksi**: Memastikan bahwa transaksi pembayaran dilakukan secara aman dan terenkripsi.
          - **Konfirmasi Pembayaran**: Memastikan bahwa pembayaran berhasil dan mengirimkan konfirmasi pembayaran kepada pengguna.
 
       4. ### Docker
@@ -138,76 +139,145 @@
          **Docker** adalah platform yang akan digunakan untuk mengembangkan, menguji, dan menjalankan aplikasi mobile dalam lingkungan yang terisolasi dan konsisten.
       
          Dalam proyek ini, Docker akan digunakan untuk:
-         - **Pengembangan Lokal**: Menyediakan lingkungan pengembangan yang konsisten dan mudah digunakan di komputer pengembang.
          - **Uji Coba Aplikasi**: Memastikan bahwa aplikasi berjalan dengan baik dalam lingkungan yang terisolasi sebelum di deploy ke lingkungan produksi.
          - **Deploy Aplikasi**: Memudahkan proses deploy aplikasi mobile ke server produksi dengan memastikan bahwa semua dependensi terpenuhi dan lingkungan berjalan dengan baik.
+      
+      5. ## Prometheus
+      
+         **Prometheus** adalah sistem monitoring dan alerting yang akan digunakan untuk memantau performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem. Dengan Prometheus, tim pengembang dapat memantau kinerja aplikasi secara real-time, mengidentifikasi masalah, dan mengambil tindakan yang diperlukan untuk memperbaiki performa aplikasi. 
+         
+         Dalam proyek ini, Docker akan digunakan untuk:
+         - **Monitoring Performa**: Memantau performa aplikasi, server, dan database untuk mengidentifikasi masalah dan memperbaiki performa.
+         - **Logging**: Mengumpulkan log aktivitas aplikasi dan server untuk analisis dan pemecahan masalah.
+      
+      6. ## Grafana 
+      
+         **Grafana** adalah platform visualisasi data yang akan digunakan untuk membuat dashboard dan grafik yang menampilkan metrik dan data dari Prometheus. Dengan Grafana, tim pengembang dapat membuat visualisasi data yang informatif dan mudah dimengerti, sehingga memudahkan dalam memantau performa aplikasi dan mengambil tindakan yang diperlukan.
+         Dalam proyek ini, Grafana akan digunakan untuk:
+      
+         - **Visualisasi Data**: Membuat dashboard dan grafik yang menampilkan metrik performa aplikasi dan server.
+         - **Monitoring Real-Time**: Menampilkan data performa aplikasi secara real-time untuk memantau kinerja aplikasi.
+
+      7. ## cAdvisor
+         cAdvisor adalah alat yang akan digunakan untuk memantau performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem. Dengan C Advisor, tim pengembang dapat memantau kinerja aplikasi secara real-time, mengidentifikasi masalah, dan mengambil tindakan yang diperlukan untuk memperbaiki performa.
+         Dalam proyek ini, cAdvisor akan digunakan untuk:
+         - **Pemantauan Penggunaan CPU dan Memori**: Mengumpulkan data tentang penggunaan CPU dan memori dari setiap container Docker yang menjalankan komponen aplikasi. Hal ini membantu dalam mengidentifikasi bottleneck dan mengoptimalkan penggunaan sumber daya.
+         - **Integrasi dengan Prometheus**: Mengumpulkan metrik dari cAdvisor dan mengirimkannya ke Prometheus untuk penyimpanan dan analisis lebih lanjut. Ini memungkinkan visualisasi dan pelaporan yang lebih baik melalui Grafana.
+         
 
    3. ##  Diagram Teknologi
-      ![Gambar Teknologi](../image/teknologi.png)
+      ![Gambar Diagram Arsitektur](/image/design-arsitektur.jpg)
 
-      Diagram di atas menggambarkan arsitektur proyek, di mana: 
-      - aplikasi mobile berkomunikasi dengan server backend yang dibangun menggunakan Express.js. 
-      - Server backend akan berinteraksi dengan database MySQL untuk menyimpan dan mengambil data. 
-      - Server backend juga akan berhubungan dengan payment gateway untuk pemrosesan pembayaran. 
-      - Docker digunakan untuk menjalankan aplikasi dalam lingkungan yang terisolasi.
+      Diagram di atas menggambarkan arsitektur proyek, di mana:
 
 # Ruang Lingkup
-   1. ## Database
-      - **Penyimpanan Data Transaksi**: Menyimpan detail transaksi penjualan termasuk waktu, item, harga, dan metode pembayaran.
-      - **Manajemen Inventaris**: Menyimpan data produk, termasuk stok, harga, dan deskripsi.
-      - **Data Pengguna dan Hak Akses**: Menyimpan informasi pengguna termasuk peran, hak akses, dan PIN untuk otentikasi pengguna di aplikasi mobile.
-   2. ## Server
-      - **API Backend**: Menggunakan Express.js untuk mengelola permintaan dan pengolahan data.
-      - **Integrasi Payment Gateway**: Mengelola pemrosesan pembayaran melalui metode QRIS.
-      - **Manajemen Sesi dan Autentikasi**: Menggunakan middleware untuk autentikasi dan otorisasi pengguna.
-      - **Logging dan Error Handling**: Middleware untuk logging aktivitas dan penanganan kesalahan.
-   3. ## Mobile Apps
-      - **Aplikasi User-Friendly**: Aplikasi mobile untuk kasir dan manajemen yang mudah digunakan.
-      - **Transaksi Penjualan**: Fitur untuk melakukan dan mencatat transaksi penjualan.
-      - **Pelaporan Penjualan**: Menyediakan laporan penjualan mingguan, bulanan, dan tahunan.
-      - **Fitur Tambahan**: 
-        - Scan barcode
-        - Edit struk
-        - Pengelolaan pengguna
-        - Penggunaan PIN untuk otorisasi akses.
-   4. ## Deployment
-      -  **Docker** : Menggunakan Docker untuk membangun, menguji, dan mendistribusikan aplikasi dalam container.
+   1. ## Aplikasi 
+      1. Database
+            - **Penyimpanan Data Transaksi**: Menyimpan detail transaksi penjualan termasuk waktu, item, harga, dan metode pembayaran.
+            - **Manajemen Inventaris**: Menyimpan data produk, termasuk stok, harga, dan deskripsi.
+            - **Data Pengguna dan Hak Akses**: Menyimpan informasi pengguna termasuk peran, hak akses, dan PIN untuk otentikasi pengguna di aplikasi mobile.
+      2. Server
+         - **API Backend**: Menggunakan Express.js untuk mengelola permintaan dan pengolahan data.
+         - **Integrasi Payment Gateway (Tripay)**: Mengelola pemrosesan pembayaran melalui metode QRIS.
+         - **Manajemen Sesi dan Autentikasi**: Menggunakan middleware untuk autentikasi dan otorisasi pengguna.
+         - **Logging dan Error Handling**: Middleware untuk logging aktivitas dan penanganan kesalahan.
+      3. Mobile Apps
+         - **Aplikasi User-Friendly**: Aplikasi mobile untuk kasir dan manajemen yang mudah digunakan.
+         - **Transaksi Penjualan**: Fitur untuk melakukan dan mencatat transaksi penjualan.
+         - **Pelaporan Penjualan**: Menyediakan laporan penjualan mingguan, bulanan, dan tahunan.
+         - **Fitur Tambahan**: 
+            - Scan barcode
+            - Edit struk
+            - Pengelolaan pengguna
+            - Penggunaan PIN untuk otorisasi akses.
+   2. ## Monitoring System
+      1. **cAdvisor** : Untuk memantau performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem
+      2. **Prometheus** : Untuk monitoring performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem
+      3. **Grafana** : Untuk visualisasi data dan metrik yang dikumpulkan oleh Prometheus.
 
 # DESAIN SISTEM
    1. ## Desain Sistem
-      ![Gambar Arsitektur](../image/arsitektur.png)
+      ![Gambar Design System](/image/design-system.jpg)
 
    2. ## Penjelasan
-
-      Diagram di atas menunjukkan bagaimana komponen-komponen utama aplikasi akan dikemas ke dalam container Docker. Setiap container akan berisi satu komponen aplikasi, seperti server backend, database, dan aplikasi mobile. Penggunaan Docker memudahkan dalam pengembangan, pengujian, dan deployment aplikasi dalam lingkungan yang terisolasi.
-
+        1. Layer 1 : Aplikasi
+           Diagram di atas menunjukkan bagaimana komponen-komponen utama aplikasi akan dikemas ke dalam container Docker. Setiap container akan berisi satu komponen aplikasi, seperti database, aplikasi backend, dan aplikasi mobile sebagai _client_.
+        2. Layer 2 : Monitoring 
+           Layer ini menunjukkan bagaimana komponen monitoring system akan diintegrasikan ke dalam arsitektur aplikasi. cAdvisor akan digunakan untuk memantau performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem. Prometheus akan digunakan untuk memantau performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem. Grafana akan digunakan untuk visualisasi data dan metrik yang dikumpulkan oleh Prometheus.
+      
 # Tugas Tim
-   1. ## UI/UX Designer
-      - **Nama :**
-        1. Nadila Aulya Salsabila Mirdianti
-      - **Tugas :**
-         1. Membuat wireframe dan prototype. 
-         2. Mendesain antarmuka dan pengalaman pengguna untuk aplikasi mobile
-         3. Melakukan user testing dan iterasi desain berdasarkan feedback.
-   2. ## Backend Developer
-      - **Nama :**
-        1. Akmal Zidani Fikri
-      - **Tugas :**
-        1. Mengembangkan dan memelihara API menggunakan Express.js, serta mengintegrasikan payment gateway. 
-        2. Merancang API endpoint untuk transaksi.
-   3. ## Mobile Developer
-      - **Nama :**
-        1. Leody Zelvon Herliansa
-        2. Bagus Bimo Prakoso
-      - **Tugas :**
-        1. Mengembangkan aplikasi mobile yang user-friendly untuk Android dan iOS. 
-        2. Mengimplementasikan fitur scan barcode.
-   4. ## DevOps Engineer
-      - **Nama :**
-        1. Ade Hafis Rabbani
-      - **Tugas :**
-        1. Mengelola proses deployment menggunakan Docker.
-        2. Memantau kinerja aplikasi dan melakukan pemeliharaan rutin.
+   1. ## Role
+      1. **UI/UX Designer**
+            - **Nama :**
+              1. Nadila Aulya Salsabila Mirdianti
+            - **Tugas :**
+               1. Membuat wireframe dan prototype. 
+               2. Mendesain antarmuka dan pengalaman pengguna untuk aplikasi mobile
+               3. Melakukan user testing dan iterasi desain berdasarkan feedback.
+      2. **Backend Developer**
+         - **Nama :**
+           1. Ade Hafis Rabbani
+         - **Tugas :**
+           1. Mengembangkan dan memelihara API menggunakan Express.js, serta mengintegrasikan payment gateway. 
+           2. Merancang API endpoint untuk transaksi.
+      3. **Mobile Developer**
+         - **Nama :**
+           1. Akmal Zidani Fikri
+           2. Bagus Bimo Prakoso
+         - **Tugas :**
+           1. Mengembangkan aplikasi mobile yang user-friendly untuk Android dan iOS. 
+           2. Mengimplementasikan fitur scan barcode.
+      4. **Database Administrator**
+         - **Nama :**
+           1. Leody Zelvon Herliansa
+         - **Tugas :**
+           1. Merancang skema database MySQL untuk menyimpan data transaksi, inventaris, dan informasi pengguna. 
+           2. Mengelola database dan melakukan backup secara berkala.
+           
+   2. ## Pembagian Tugas 
+      1. Aplikasi Mobile 
+         1. Deployment MySQL Database
+            - **Nama : Leody Zelvon Herliansa**
+            - **Tugas dan Kewajiban :**
+                1. Setup environment MySQL 
+                2. Membuat skema database
+                3. Data migration
+                4. Optimazing database
+              
+         2. Deployment API 
+             - **Nama : Bagus Bimo Prakoso**
+             - **Tugas dan Kewajiban :**
+                1. API Development 
+                2. Containarization API
+                3. Configuration Management
+                4. API Testing
+               
+         3. Implementasi Endpoint API kedalam Fitur
+             - **Nama : Nadila Aulya Salsabila Mirdianti**
+             - **Tugas dan Kewajiban :**
+                1. Integrasi fitur 
+                2. Error handling
+                3. Performance testing
+      2. Monitoring System
+         1. Deployment cAdvisor
+             - **Nama : Ade Hafis Rabbani**
+             - **Tugas dan Kewajiban :**
+                1. Setup dan configuration
+                2. Metrics collection
+                3. Integration dengan Prometheus
+         2. Deployment Prometheus
+             - **Nama : Ade Hafis Rabbani**
+             - **Tugas dan Kewajiban :**
+                1. Setup dan configuration
+                2. Metrics collection
+                3. Integration dengan Grafana
+         3. Deployment Grafana
+             - **Nama : Akmal Zidani Fikri**
+             - **Tugas dan Kewajiban :**
+                1. Installation dan setup
+                2. Dashboard creation
+                3. Data source management
+                4. Custom visualization
 
 # Tahap Pelaksanaan
    1. ## Perencanaan
