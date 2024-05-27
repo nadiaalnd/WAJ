@@ -310,6 +310,4 @@
    Lorem ipsum dolor
 
 # Kesimpulan
-
-# Daftar Pustaka
    Lorem ipsum dolor
