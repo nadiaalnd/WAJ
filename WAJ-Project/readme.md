@@ -201,9 +201,9 @@
       ![Gambar Design System](./image/design-system.jpg)
 
    2. ## Penjelasan
-        1. Layer 1 : Aplikasi
+        1. **Layer 1 : Aplikasi** <br>
            Diagram di atas menunjukkan bagaimana komponen-komponen utama aplikasi akan dikemas ke dalam container Docker. Setiap container akan berisi satu komponen aplikasi, seperti database, aplikasi backend, dan aplikasi mobile sebagai _client_.
-        2. Layer 2 : Monitoring 
+        2. **Layer 2 : Monitoring** <br> 
            Layer ini menunjukkan bagaimana komponen monitoring system akan diintegrasikan ke dalam arsitektur aplikasi. cAdvisor akan digunakan untuk memantau performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem. Prometheus akan digunakan untuk memantau performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem. Grafana akan digunakan untuk visualisasi data dan metrik yang dikumpulkan oleh Prometheus.
       
 # Tugas Tim
