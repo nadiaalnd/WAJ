@@ -165,7 +165,7 @@
          - **Integrasi dengan Prometheus**: Mengumpulkan metrik dari cAdvisor dan mengirimkannya ke Prometheus untuk penyimpanan dan analisis lebih lanjut. Ini memungkinkan visualisasi dan pelaporan yang lebih baik melalui Grafana.
          
 
-   3. ##  Diagram Teknologi
+   3. ##  Diagram Arsitektur
       
       ![Gambar Diagram Arsitektur](./image/design-arsitektur.jpg)
 
