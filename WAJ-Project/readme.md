@@ -55,7 +55,6 @@
       <ol>
         <li><a href="#latar-belakang">Latar Belakang</a></li>
         <li><a href="#pemanfaatan-teknologi">Pemanfaatan Teknologi</a></li>
-        <li><a href="#diagram-arsitektur">Diagram Arsitektur</a></li>
       </ol>
     </li>
     <li>
@@ -163,13 +162,7 @@
          Dalam proyek ini, cAdvisor akan digunakan untuk:
          - **Pemantauan Penggunaan CPU dan Memori**: Mengumpulkan data tentang penggunaan CPU dan memori dari setiap container Docker yang menjalankan komponen aplikasi. Hal ini membantu dalam mengidentifikasi bottleneck dan mengoptimalkan penggunaan sumber daya.
          - **Integrasi dengan Prometheus**: Mengumpulkan metrik dari cAdvisor dan mengirimkannya ke Prometheus untuk penyimpanan dan analisis lebih lanjut. Ini memungkinkan visualisasi dan pelaporan yang lebih baik melalui Grafana.
-         
-
-   3. ##  Diagram Arsitektur
-      
-      ![Gambar Diagram Arsitektur](./image/design-arsitektur.jpg)
-
-      Diagram di atas menggambarkan arsitektur proyek, di mana:
+ 
 
 # Ruang Lingkup
    1. ## Aplikasi 
@@ -242,8 +235,6 @@
             - **Tugas dan Kewajiban :**
                 1. Setup environment MySQL 
                 2. Membuat skema database
-                3. Data migration
-                4. Optimazing database
               
          2. Deployment API 
              - **Nama : Bagus Bimo Prakoso**
@@ -258,7 +249,7 @@
              - **Tugas dan Kewajiban :**
                 1. Integrasi fitur 
                 2. Error handling
-                3. Performance testing
+                
       2. Monitoring System
          1. Deployment cAdvisor
              - **Nama : Ade Hafis Rabbani**
@@ -281,6 +272,7 @@
                 4. Custom visualization
 
 # Tahap Pelaksanaan
+  
    1. ## Perencanaan
       - **Identifikasi Kebutuhan**: Menganalisis kebutuhan aplikasi dan menentukan fitur-fitur yang akan dikembangkan.
       - **Penjadwalan**: Menetapkan jadwal pengembangan, pengujian, dan implementasi aplikasi.
@@ -304,10 +296,188 @@
       - **Optimalisasi Kinerja**: Mengidentifikasi area-area di mana kinerja aplikasi dapat ditingkatkan dan melakukan perbaikan yang diperlukan.
 
 # Implementasi
-   Lorem ipsum dolor
+   1. Aplikasi Mobile
+      1. **Deployment MySQL Database**
+         - **Nama : Leody Zelvon Herliansa**
+         - **Tugas dan Kewajiban :**
+            1. Setup environment MySQL
+               - Instalasi dan konfigurasi Docker dan Docker Compose
+               - Persiapan file 'docker-compose.yml' untuk MySQL Database
+                 ```yaml
+                    db:
+                    image: mysql:5.7
+                    container_name: paygate-posportal-db
+                    environment:
+                    MYSQL_ROOT_PASSWORD: devops1
+                    MYSQL_DATABASE: db_pos_portal
+                    MYSQL_USER: devopsadmin
+                    MYSQL_PASSWORD: devops1
+                    ports:
+                    - "3306:3306"
+                    networks:
+                      - paygate-network
+                    volumes:
+                      - ./db.sql:/docker-entrypoint-initdb.d/db.sql
+                      - db_data:/var/lib/mysql
+                 ```
+
+            2. Membuat skema database
+               - Buat file 'db.sql' yang berisi skema database awal.
+               - Skema mencakup semua tabel, indeks, dan constraint yang diperlukan.
+                 ![Gambar Skema Database](./image/db1.png)
+
+      2. **Deployment API**
+         - **Nama : Bagus Bimo Prakoso**
+         - **Tugas dan Kewajiban :**
+            1. API Development
+               - Membuat API endpoint untuk transaksi penjualan.
+               - Menggunakan Express.js untuk membuat API backend sesuai dengan kebutuhan payment gateway.
+            2. Containarization API
+               - Membuat Dockerfile untuk mengemas API backend ke dalam container Docker.
+               
+                  ```yaml
+                     WORKDIR /usr/src/app
+                     COPY package*.json ./
+                     RUN npm install
+                     COPY . .
+                     EXPOSE 5000
+                     CMD ["npm", "start"]
+                  ```
+               - Menggunakan Docker Compose untuk mengelola container dan jaringan.
+               
+                  ```yaml
+                     app:
+                        build: .
+                        container_name: paygate-posportal-app
+                        environment:
+                          - PORT=5000
+                          - NODE_ENV=development
+                          - APP_URL=http://localhost:5000
+                          - APP_NAME=Paygate-PosPortal
+                          - APP_VERSION=1.0.0
+                          - APP_LENGTH_API_KEY=32
+                          - APP_TIMEZONE=Asia/Jakarta
+                          - MERCHANT_CODE=T9403
+                          - MERCHANT_KEY=DEV-nOqEQ9h8bBUHRc4SvjH6OzGwHTPMsnOgK0JxzDq3
+                          - PRIVATE_KEY=6EkU8-kHGQE-ZDWas-DPZgd-8wTMb
+                          - SANDBOX=true
+                          - DB_CONNECTION=mysql
+                          - DB_HOST=db
+                          - DB_PORT=3306
+                          - DB_DATABASE=db_pos_portal
+                          - DB_USERNAME=devopsadmin
+                          - DB_PASSWORD=devops1
+                        ports:
+                          - "5000:5000"
+                        depends_on:
+                          - db
+                        networks:
+                          - paygate-network
+                  ```
+           3. Configuration Management
+              - Mengelola konfigurasi API menggunakan environment variables.
+              - Memisahkan konfigurasi untuk pengembangan, uji coba, dan produksi.
+              
+      3. **Implementasi Endpoint API kedalam Fitur**
+         - **Nama : Nadila Aulya Salsabila Mirdianti**
+         - **Tugas dan Kewajiban :**
+            1. Integrasi fitur
+               - Mengintegrasikan fitur-fitur aplikasi mobile dengan API backend.
+               - Memastikan bahwa data transaksi tersedia dan dapat diakses melalui API.
+            2. Error handling
+               - Menangani kesalahan dan respons yang tidak diharapkan dari API.
+               - Memberikan pesan kesalahan yang informatif dan membantu pengguna dalam menavigasi aplikasi.
+            3. API Testing
+               - Melakukan pengujian API menggunakan Postman.
+               - Memastikan bahwa API berfungsi dengan baik dan memberikan respons yang sesuai.
+               
+   2. Monitoring System
+      1. **Deployment cAdvisor**
+         - **Nama : Ade Hafis Rabbani**
+         - **Tugas dan Kewajiban :**
+            1. Setup dan configuration
+               - Instalasi cAdvisor pada server yang sama dengan aplikasi untuk memantau container Docker.
+               - Konfigurasi cAdvisor untuk memantau performa aplikasi dan mengumpulkan metrik.
+            2. Metrics collection
+               - Mengumpulkan metrik performa aplikasi seperti penggunaan CPU, memori, dan disk.
+               - Menyimpan metrik dalam format yang dapat diakses oleh Prometheus.
+            3. Integration dengan Prometheus
+               - Mengintegrasikan cAdvisor dengan Prometheus untuk memantau performa aplikasi secara real-time.
+               
+      2. **Deployment Prometheus**
+         - **Nama : Ade Hafis Rabbani**
+         - **Tugas dan Kewajiban :**
+            1. Setup dan configuration
+               - Instalasi Prometheus pada server yang sama dengan aplikasi untuk memantau performa aplikasi.
+               - Konfigurasi Prometheus untuk mengumpulkan metrik dari cAdvisor dan aplikasi.
+            2. Metrics collection
+               - Mengumpulkan metrik performa aplikasi seperti penggunaan CPU, memori, dan disk.
+               - Menyimpan metrik dalam format yang dapat diakses oleh Grafana.
+            3. Integration dengan Grafana
+               - Konfigurasi Grafana untuk visualisasi metrik yang dikumpulkan oleh Prometheus.
+               
+      3. **Deployment Grafana**
+         - **Nama : Akmal Zidani Fikri**
+         - **Tugas dan Kewajiban :**
+            1. Installation dan setup
+               - Instalasi Grafana pada server yang sama dengan aplikasi untuk visualisasi metrik.
+               - Konfigurasi Grafana untuk mengakses metrik dari Prometheus.
+            2. Data source management
+               - Mengelola data source dari Prometheus untuk mengakses metrik performa aplikasi.
+               - Memastikan bahwa data source terhubung dengan benar dan dapat diakses oleh Grafana.
+            3. Custom visualization
+               - Membuat visualisasi kustom untuk metrik performa aplikasi.
+               - Menyesuaikan tata letak dan warna grafik untuk meningkatkan keterbacaan dan pemahaman.
 
 # Sistem Pengujian
-   Lorem ipsum dolor
+   Pengujian aplikasi menggunakan metode cURL untuk melakukan request ke API backend dan memastikan bahwa respons sesuai dengan yang diharapkan. Pengujian dilakukan pada fitur integrasi payment gateway.
+   1. **Pengujian Application Layer** 
+      1. Buat file `testing-api.sh` berisi script cURL untuk melakukan request ke API backend. 
+         ![Gambar Testing API](./image/test-apps1.png)
+      
+      2. Jalankan pengujian untuk melihat apakah API memberikan respons yang sesuai.
+      
+         1. **GET Payment Channel**
+         
+            HTTP Method : GET <br>
+            Header      : ```Accept: application/json``` <br>
+            Endpoint    : ```/api/v1/payment/get-payment-channel``` <br>
+            ![Gambar Testing GET Payment Channel](./image/test-apps2.png)
+            
+         2. **CREATE Transaction**
+         
+            HTTP Method : POST <br>
+            Header      : ```Accept: application/json``` <br>
+            Endpoint    : ```/api/v1/payment/create-transaction``` <br>
+            ![Gambar Testing CREATE Transaction](./image/test-apps3.png)
+         
+         3. **CREATE Payment**
+         
+            HTTP Method : POST <br>
+            Header      : ```Accept: application/json``` <br>
+            Endpoint    : ```/api/v1/payment/create-payment``` <br>
+            ![Gambar Testing CREATE Payment](./image/test-apps4.png)
+         
+         4. **GET Status Payment**
+         
+            HTTP Method : GET <br>
+            Header      : ```Accept: application/json``` <br>
+            Endpoint    : ```/api/v1/payment/get-status-payment?order_id=$order_id``` <br>
+            ![Gambar Testing GET Status Payment](./image/test-apps5.png)
+         
+      3. **Pengujian Webhook**
+         Karena aplikasi tidak hanya api tetapi ada webhook maka dilakukan pengujian dengan cara melakukan simulasi pembayaran dari provider payment gateway yang dipakai (tripay).
+      
+         ![Video Testing Webhook](./image/test-webhook.mkv)
+         
+   2. **Pengujian Monitoring Layer**
+
+      Layer monitoring diuji dengan cara memantau performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem. Pengujian dilakukan pada fitur cAdvisor, Prometheus, dan Grafana.
+
+      ![Gambar Testing Monitoring](./image/test-monitoring.jpg)
+
+      Berhasil mendapatkan data dari prometheus dengan exporter cAdvisor untuk mendapatkan statistik penggunaan CPU,RAM,Network transmitter dan network receiver
 
 # Kesimpulan
-   Lorem ipsum dolor
+   Proyek ini bertujuan untuk mengembangkan aplikasi mobile Point of Sales (POS) yang memungkinkan pengguna untuk mengelola transaksi penjualan dengan efisien. Aplikasi ini menyediakan fitur-fitur seperti manajemen stok barang, pembayaran, pelaporan penjualan, dan integrasi dengan payment gateway. Proyek ini melibatkan pengembang backend, pengembang mobile, dan administrator database untuk mengembangkan dan memelihara aplikasi. Selain itu, proyek ini juga melibatkan tim monitoring system untuk memantau performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem. Proyek ini melibatkan beberapa teknologi seperti Express.js, MySQL, Docker, Prometheus, Grafana, dan cAdvisor untuk mengembangkan dan mengoperasikan aplikasi. Proyek ini diharapkan dapat membantu bisnis dalam meningkatkan efisiensi operasional, mengurangi kesalahan manual, dan menyediakan data penjualan secara real-time.
+   
