@@ -591,7 +591,7 @@ dengan yang diharapkan. Pengujian dilakukan pada fitur integrasi payment gateway
 
    1. Installation Testing 
 
-      ![Gambar Testing Monitoring](./image/test-monitoring1.png) 
+      ![Gambar Testing Monitoring](./image/installation-test.jpg) 
       
    2. Layer monitoring diuji dengan cara memantau performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem. Pengujian dilakukan pada fitur cAdvisor, Prometheus, dan Grafana.
 
