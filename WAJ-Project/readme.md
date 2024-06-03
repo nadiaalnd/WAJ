@@ -84,15 +84,23 @@
         <li><a href="#perencanaan">Perencanaan</a></li>
         <li><a href="#desain">Desain</a></li>
         <li><a href="#pengembangan">Pengembangan</a></li>
-        <li><a href="#pengujian">Pengujian</a></li>
         <li><a href="#implementasi">Implementasi</a></li>
-        <li><a href="#pemeliharaan-dan-optimalisasi">Pemeliharaan dan Optimalisasi</a></li>
+        <li><a href="#pengujian-api-dan-system-monitoring">Pengujian API dan System Monitoring</a></li>
       </ol>
     </li>
-    <li><a href="#implementasi">Implementasi</a></li>
-    <li><a href="#sistem-pengujian">Sistem Pengujian</a></li>
+    <li><a href="#implementasi">Implementasi</a>
+      <ol>
+         <li><a href="#aplikasi-mobile">Aplikasi Mobile</a></li>
+         <li><a href="#monitoring-system">Monitoring System</a></li>
+      </ol>
+    </li>
+    <li><a href="#sistem-pengujian">Sistem Pengujian</a>
+      <ol>
+        <li><a href="#pengujian-aplication-layer">Pengujian Aplication Layer</a></li>
+        <li><a href="#pengujian-monitoring-layer">Pengujian Monitoring Layer</a></li>
+      </ol>
+    </li>
     <li><a href="#kesimpulan">Kesimpulan</a></li>
-    <li><a href="#daftar-pustaka">Daftar Pustaka</a></li>
   </ol>
 </details>
 
@@ -291,9 +299,9 @@
    5. ## Deployment
       - **Deploy Container**: Menggunakan Docker untuk membangun container dan mendistribusikan aplikasi.
       - **Monitor dan Manajemen**: Memantau kinerja aplikasi secara terus-menerus dan melakukan manajemen ketika diperlukan.
-   6. ## Pemeliharaan dan Optimalisasi
-      - **Pemeliharaan Rutin**: Melakukan pemeliharaan rutin pada aplikasi dan infrastruktur.
-      - **Optimalisasi Kinerja**: Mengidentifikasi area-area di mana kinerja aplikasi dapat ditingkatkan dan melakukan perbaikan yang diperlukan.
+   6. ## Pengujian API dan System Monitoring
+      - **Pengujian API**: Melakukan pengujian API menggunakan Postman untuk memastikan bahwa API berfungsi dengan baik.
+      - **Pengujian Monitoring System**: Melakukan pengujian monitoring system untuk memastikan bahwa metrik performa aplikasi terkumpul dengan baik. 
 
 # Implementasi
    1. Aplikasi Mobile
