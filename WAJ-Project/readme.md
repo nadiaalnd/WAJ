@@ -435,7 +435,8 @@
       1. Buat file `testing-api.sh` berisi script cURL untuk melakukan request ke API backend. 
          ![Gambar Testing API](./image/test-apps1.png)
       
-      2. Jalankan pengujian untuk melihat apakah API memberikan respons yang sesuai.
+      2. Jalankan pengujian untuk melihat apakah API memberikan respons yang sesuai. <br>
+         **Link dokumentasi API :** [Dokumentasi API](https://documenter.getpostman.com/view/18676532/2sA3Qs9Bqp#e3fd5475-47fe-4c5d-aee8-cd75849b9274)
       
          1. **GET Payment Channel**
          
@@ -477,8 +478,16 @@
 
       ![Gambar Testing Monitoring](./image/test-monitoring.jpg)
 
+      - buka port 3000 untuk service grafana
+      - Langkah selanjutnya adalah mengakses Grafana melalui browser dengan alamat IP server dan port 3000.
+      - Masuk ke Grafana dengan menggunakan username dan password yang telah dibuat sebelumnya.
+      - Setelah masuk, buat dashboard baru dan tambahkan panel untuk menampilkan metrik performa aplikasi.
+      - Konfigurasi data source untuk mengakses metrik dari Prometheus.
+      - Tambahkan query untuk mengambil metrik performa aplikasi dari Prometheus.
+      - Grafana akan menampilkan visualisasi data performa aplikasi seperti penggunaan CPU, memori, dan disk dalam bentuk grafik yang informatif dan mudah dimengerti.
       Berhasil mendapatkan data dari prometheus dengan exporter cAdvisor untuk mendapatkan statistik penggunaan CPU,RAM,Network transmitter dan network receiver
 
 # Kesimpulan
    Proyek ini bertujuan untuk mengembangkan aplikasi mobile Point of Sales (POS) yang memungkinkan pengguna untuk mengelola transaksi penjualan dengan efisien. Aplikasi ini menyediakan fitur-fitur seperti manajemen stok barang, pembayaran, pelaporan penjualan, dan integrasi dengan payment gateway. Proyek ini melibatkan pengembang backend, pengembang mobile, dan administrator database untuk mengembangkan dan memelihara aplikasi. Selain itu, proyek ini juga melibatkan tim monitoring system untuk memantau performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem. Proyek ini melibatkan beberapa teknologi seperti Express.js, MySQL, Docker, Prometheus, Grafana, dan cAdvisor untuk mengembangkan dan mengoperasikan aplikasi. Proyek ini diharapkan dapat membantu bisnis dalam meningkatkan efisiensi operasional, mengurangi kesalahan manual, dan menyediakan data penjualan secara real-time.
+
    
