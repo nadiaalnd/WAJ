@@ -96,7 +96,7 @@
     </li>
     <li><a href="#sistem-pengujian">Sistem Pengujian</a>
       <ol>
-        <li><a href="#pengujian-application-layer">Pengujian Aplication Layer</a></li>
+        <li><a href="#pengujian-application-layer">Pengujian Application Layer</a></li>
         <li><a href="#pengujian-monitoring-layer">Pengujian Monitoring Layer</a></li>
       </ol>
     </li>
