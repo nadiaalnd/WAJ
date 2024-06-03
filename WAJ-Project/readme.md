@@ -292,14 +292,10 @@
       - **Pembuatan Aplikasi Mobile**: Membangun aplikasi mobile dengan fokus pada kenyamanan pengguna dan keamanan data.
       - **Integrasi Payment Gateway**: Mengintegrasikan payment gateway untuk memungkinkan transaksi pembayaran.
       - **Pengembangan Database**: Membuat skema database MySQL untuk menyimpan data transaksi, inventaris, dan informasi pengguna.
-   4. ## Pengujian
-      - **Pengujian Fungsional**: Memastikan bahwa semua fitur aplikasi berfungsi sesuai yang diharapkan.
-      - **Pengujian Integrasi**: Menguji integrasi antara komponen-komponen aplikasi seperti server, database, dan aplikasi mobile.
-      - **Pengujian Keamanan**: Melakukan pengujian keamanan untuk mengidentifikasi dan memperbaiki kerentanan yang ada.
-   5. ## Deployment
+   4. ## Deployment
       - **Deploy Container**: Menggunakan Docker untuk membangun container dan mendistribusikan aplikasi.
       - **Monitor dan Manajemen**: Memantau kinerja aplikasi secara terus-menerus dan melakukan manajemen ketika diperlukan.
-   6. ## Pengujian API dan System Monitoring
+   5. ## Pengujian API dan System Monitoring
       - **Pengujian API**: Melakukan pengujian API menggunakan Postman untuk memastikan bahwa API berfungsi dengan baik.
       - **Pengujian Monitoring System**: Melakukan pengujian monitoring system untuk memastikan bahwa metrik performa aplikasi terkumpul dengan baik. 
 
