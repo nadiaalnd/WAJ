@@ -250,14 +250,19 @@
                 1. API Development 
                 2. Containarization API
                 3. Configuration Management
-                4. API Testing
                
          3. Implementasi Endpoint API kedalam Fitur
              - **Nama : Nadila Aulya Salsabila Mirdianti**
              - **Tugas dan Kewajiban :**
                 1. Integrasi fitur 
                 2. Error handling
-                
+               
+         4. Membuat Webhook
+             - **Nama : Ade Hafis Rabbani**
+             - **Tugas dan Kewajiban :**
+                1. Membuat webhook Tripay
+                2. Integrasi webhook Tripay dengan aplikasi mobile
+       
       2. Monitoring System
          1. Deployment cAdvisor
              - **Nama : Ade Hafis Rabbani**
@@ -265,12 +270,14 @@
                 1. Setup dan configuration
                 2. Metrics collection
                 3. Integration dengan Prometheus
+               
          2. Deployment Prometheus
              - **Nama : Ade Hafis Rabbani**
              - **Tugas dan Kewajiban :**
                 1. Setup dan configuration
                 2. Metrics collection
                 3. Integration dengan Grafana
+               
          3. Deployment Grafana
              - **Nama : Akmal Zidani Fikri**
              - **Tugas dan Kewajiban :**
@@ -278,9 +285,29 @@
                 2. Dashboard creation
                 3. Data source management
                 4. Custom visualization
-
+               
+      3. Testing API dan Deploy
+         1. Testing API
+            - **Nama :**
+              1. Bagus Bimo Prakoso
+              2. Nadila Aulya Salsabila Mirdianti
+              3. Leody Zelvon Herliansa
+            - **Tugas dan Kewajiban :**
+                1. Pengujian API
+                2. Pengujian integrasi API dengan aplikasi mobile
+                
+         2. Testing Monitoring System
+            - **Nama :**
+                1. Ade Hafis Rabbani
+                2. Akmal Zidani Fikri
+            - **Tugas dan Kewajiban :**
+                1. Pengujian monitoring system
+                2. Pengujian integrasi monitoring system dengan aplikasi mobile
+              
 # Tahap Pelaksanaan
-  
+
+   ![Gambar Tahap Pelaksanaan](./image/gantt-chart.png)
+
    1. ## Perencanaan
       - **Identifikasi Kebutuhan**: Menganalisis kebutuhan aplikasi dan menentukan fitur-fitur yang akan dikembangkan.
       - **Penjadwalan**: Menetapkan jadwal pengembangan, pengujian, dan implementasi aplikasi.
@@ -328,6 +355,7 @@
             2. Membuat skema database
                - Buat file 'db.sql' yang berisi skema database awal.
                - Skema mencakup semua tabel, indeks, dan constraint yang diperlukan.
+               
                  ![Gambar Skema Database](./image/db1.png)
 
       2. **Deployment API**
@@ -394,7 +422,16 @@
             3. API Testing
                - Melakukan pengujian API menggunakan Postman.
                - Memastikan bahwa API berfungsi dengan baik dan memberikan respons yang sesuai.
-               
+      
+      4. **Membuat Webhook** 
+         - **Nama : Ade Hafis Rabbani**
+         - **Tugas dan Kewajiban :**
+             1. Membuat webhook Tripay
+                - Membuat webhook untuk menerima notifikasi pembayaran dari payment gateway.
+                - Mengelola notifikasi pembayaran dan memperbarui status transaksi.
+             2. Integrasi webhook Tripay dengan aplikasi mobile
+                - Mengintegrasikan webhook dengan API backend untuk memperbarui status transaksi secara otomatis serta generate QR Code pembayaran.
+             
    2. ## Monitoring System
       1. **Deployment cAdvisor**
          - **Nama : Ade Hafis Rabbani**
@@ -437,10 +474,10 @@
    Pengujian aplikasi menggunakan metode cURL untuk melakukan request ke API backend dan memastikan bahwa respons sesuai dengan yang diharapkan. Pengujian dilakukan pada fitur integrasi payment gateway.
    1. ## Pengujian Application Layer 
       1. Buat file `testing-api.sh` berisi script cURL untuk melakukan request ke API backend. 
+      
          ![Gambar Testing API](./image/test-apps1.png)
       
       2. Jalankan pengujian untuk melihat apakah API memberikan respons yang sesuai. <br>
-         **Link dokumentasi API :** [Dokumentasi API](https://documenter.getpostman.com/view/18676532/2sA3Qs9Bqp#e3fd5475-47fe-4c5d-aee8-cd75849b9274)
       
          1. **GET Payment Channel**
          
@@ -469,7 +506,17 @@
             Header      : ```Accept: application/json``` <br>
             Endpoint    : ```/api/v1/payment/get-status-payment?order_id=$order_id``` <br>
             ![Gambar Testing GET Status Payment](./image/test-apps5.png)
-         
+
+         | Test Case ID | Test Case Description                           | Pre-Condition                                                                                                             | Test Step                                                                                                                                                                                                                                                                             | Expected Result                                                                                  | Actual Result                                                                                                                                           | Status |
+         |--------------|-------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
+         | TC01         | Menguji GET Payment Channel API                 | Server harus dalam kondisi running dan dapat diakses                                                                      | 1. Jalankan curl -X GET "http://<server_address>/api/v1/payment/get-payment-channel" -H "Accept: application/json"                                                                                                                                                                    | API mengembalikan daftar channel pembayaran dalam format JSON                                    | API mengembalikan daftar channel pembayaran dalam format JSON dengan pesan sukses: "Success: Daftar channel pembayaran diterima"                        | ✅     |
+         | TC02         | Menguji CREATE Transaction API                  | Server harus dalam kondisi running dan dapat diakses                                                                      | 1. Jalankan curl -X POST "http://<server_address>/api/v1/payment/create-transaction" -H "Accept: application/json" -d '{"amount":10000,"currency":"IDR"}'                                                                                                                             | API mengembalikan detail transaksi termasuk ID transaksi dalam format JSON                       | API mengembalikan detail transaksi termasuk ID transaksi dalam format JSON dengan pesan sukses: "Success: Transaksi berhasil dibuat"                    | ✅     |
+         | TC03         | Menguji CREATE Payment API                      | Server harus dalam kondisi running dan dapat diakses                                                                      | 1. Jalankan curl -X POST "http://<server_address>/api/v1/payment/create-payment" -H "Accept: application/json" -d '{"transaction_id":"<transaction_id>", "payment_method":"BANK_TRANSFER"}'                                                                                           | API mengembalikan detail pembayaran dan status pembayaran dalam format JSON                      | API mengembalikan detail pembayaran dan status pembayaran dalam format JSON dengan pesan sukses: "Success: Pembayaran berhasil dibuat"                  | ✅     |
+         | TC04         | Menguji GET Status Payment API                  | Server harus dalam kondisi running dan dapat diakses; Memiliki ID pesanan yang valid                                      | 1. Jalankan curl -X GET "http://<server_address>/api/v1/payment/get-status-payment?order_id=<order_id>" -H "Accept: application/json"                                                                                                                                                 | API mengembalikan status pembayaran dari ID pesanan yang diberikan dalam format JSON             | API mengembalikan status pembayaran dari ID pesanan yang diberikan dalam format JSON dengan pesan sukses: "Success: Status pembayaran diterima"         | ✅     |
+         | TC05         | Menguji Webhook untuk Konfirmasi Pembayaran     | Server harus dalam kondisi running dan dapat diakses; Endpoint webhook dikonfigurasi untuk menerima konfirmasi pembayaran | 1. Simulasikan konfirmasi pembayaran dari provider payment gateway ke endpoint webhook dengan menggunakan cURL<br>2. Jalankan curl -X POST "http://<server_address>/webhook/payment-confirmation" -H "Content-Type: application/json" -d '{"order_id":"<order_id>", "status":"PAID"}' | Webhook memproses konfirmasi pembayaran dan memperbarui status pembayaran dalam sistem           | Webhook memproses konfirmasi pembayaran dan memperbarui status pembayaran dalam sistem dengan pesan sukses: "Success: Pembayaran berhasil dikonfirmasi" | ✅     |
+
+         **Link dokumentasi API :** [Dokumentasi API](https://documenter.getpostman.com/view/18676532/2sA3Qs9Bqp#e3fd5475-47fe-4c5d-aee8-cd75849b9274)   
+
       3. **Pengujian Webhook**
       
          Karena aplikasi tidak hanya api tetapi ada webhook maka dilakukan pengujian dengan cara melakukan simulasi pembayaran dari provider payment gateway yang dipakai (tripay).
