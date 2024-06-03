@@ -14,15 +14,15 @@
   <hr>
 </div>
 
-| Nomor | File                                 |
-|-------|--------------------------------------|
-| 1     | [Chapter 1](./Chapter_1/readme.md)   |
-| 2     | [Chapter 2](./Chapter_2/readme.md)   |
-| 3     | [Chapter 3](./Chapter_3/readme.md)   |
-| 4     | [Chapter 4](./Chapter_4/readme.md)   |
-| 5     | [Chapter 5](./Chapter_5/readme.md)   |
-| 6     | [Chapter 6](./Chapter_6/readme.md)   |
-| 7     | [Chapter 7](./Chapter_7/readme.md)   |
+| Nomor | File                           |
+|-------|--------------------------------|
+| 1     | [Step 1](./Step1/readme.md) |
+| 2     | [Step 2](./Step2/readme.md) |
+| 3     | [Step 3](./Step3/readme.md) |
+| 4     | [Step 4](./Step4/readme.md) |
+| 5     | [Step 5](./Step5/readme.md) |
+| 6     | [Step 6](./Step6/readme.md) |
+| 7     | [Step 7](./Step7/readme.md) |
 
 
 ---

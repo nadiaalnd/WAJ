@@ -26,7 +26,7 @@
     docker volume create todo-db
     ```
     ![run](./img/4.png)
-
+6. 
 6. Hentikan todo-app yang berjalan:
     ```bash
     docker stop <container_id>
@@ -35,7 +35,6 @@
     ```bash
     docker run -d -p 3000:3000 -v todo-db:/etc/todos getting-started
     ```
-    ![run](./img/5.png)
 8. inspect volume yang telah dibuat:
     ```bash
     docker volume inspect todo-db
