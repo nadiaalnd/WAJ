@@ -468,7 +468,8 @@
       3. **Pengujian Webhook**
       
          Karena aplikasi tidak hanya api tetapi ada webhook maka dilakukan pengujian dengan cara melakukan simulasi pembayaran dari provider payment gateway yang dipakai (tripay).
-         <iframe width="560" height="315" src="https://youtu.be/jJomOK25Y2c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+         [![Tonton Video](https://img.youtube.com/vi/jJomOK25Y2c/0.jpg)](https://www.youtube.com/watch?v=jJomOK25Y2c)
          
    2. **Pengujian Monitoring Layer**
 
