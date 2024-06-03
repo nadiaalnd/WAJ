@@ -589,21 +589,24 @@ dengan yang diharapkan. Pengujian dilakukan pada fitur integrasi payment gateway
 
 2. ## Pengujian Monitoring Layer
 
-   Layer monitoring diuji dengan cara memantau performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem.
-   Pengujian dilakukan pada fitur cAdvisor, Prometheus, dan Grafana.
+   1. Installation Testing 
 
-   ![Gambar Testing Monitoring](./image/test-monitoring.jpg)
+      ![Gambar Testing Monitoring](./image/test-monitoring1.png) 
+      
+   2. Layer monitoring diuji dengan cara memantau performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem. Pengujian dilakukan pada fitur cAdvisor, Prometheus, dan Grafana.
 
-    - buka port 3000 untuk service grafana
-    - Langkah selanjutnya adalah mengakses Grafana melalui browser dengan alamat IP server dan port 3000.
-    - Masuk ke Grafana dengan menggunakan username dan password yang telah dibuat sebelumnya.
-    - Setelah masuk, buat dashboard baru dan tambahkan panel untuk menampilkan metrik performa aplikasi.
-    - Konfigurasi data source untuk mengakses metrik dari Prometheus.
-    - Tambahkan query untuk mengambil metrik performa aplikasi dari Prometheus.
-    - Grafana akan menampilkan visualisasi data performa aplikasi seperti penggunaan CPU, memori, dan disk dalam bentuk
-      grafik yang informatif dan mudah dimengerti.
-      Berhasil mendapatkan data dari prometheus dengan exporter cAdvisor untuk mendapatkan statistik penggunaan
-      CPU,RAM,Network transmitter dan network receiver
+      ![Gambar Testing Monitoring](./image/test-monitoring.jpg)
+
+      - buka port 3000 untuk service grafana
+      - Langkah selanjutnya adalah mengakses Grafana melalui browser dengan alamat IP server dan port 3000.
+      - Masuk ke Grafana dengan menggunakan username dan password yang telah dibuat sebelumnya.
+      - Setelah masuk, buat dashboard baru dan tambahkan panel untuk menampilkan metrik performa aplikasi.
+      - Konfigurasi data source untuk mengakses metrik dari Prometheus.
+      - Tambahkan query untuk mengambil metrik performa aplikasi dari Prometheus.
+      - Grafana akan menampilkan visualisasi data performa aplikasi seperti penggunaan CPU, memori, dan disk dalam bentuk
+        grafik yang informatif dan mudah dimengerti.
+        Berhasil mendapatkan data dari prometheus dengan exporter cAdvisor untuk mendapatkan statistik penggunaan
+        CPU,RAM,Network transmitter dan network receiver
 
 # Kesimpulan
 
