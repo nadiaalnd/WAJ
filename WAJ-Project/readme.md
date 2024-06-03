@@ -300,7 +300,7 @@
       - **Pengujian Monitoring System**: Melakukan pengujian monitoring system untuk memastikan bahwa metrik performa aplikasi terkumpul dengan baik. 
 
 # Implementasi
-   1. Aplikasi Mobile
+   1. ## Aplikasi Mobile
       1. **Deployment MySQL Database**
          - **Nama : Leody Zelvon Herliansa**
          - **Tugas dan Kewajiban :**
@@ -395,7 +395,7 @@
                - Melakukan pengujian API menggunakan Postman.
                - Memastikan bahwa API berfungsi dengan baik dan memberikan respons yang sesuai.
                
-   2. Monitoring System
+   2. ## Monitoring System
       1. **Deployment cAdvisor**
          - **Nama : Ade Hafis Rabbani**
          - **Tugas dan Kewajiban :**
@@ -435,7 +435,7 @@
 
 # Sistem Pengujian
    Pengujian aplikasi menggunakan metode cURL untuk melakukan request ke API backend dan memastikan bahwa respons sesuai dengan yang diharapkan. Pengujian dilakukan pada fitur integrasi payment gateway.
-   1. **Pengujian Application Layer** 
+   1. ## Pengujian Application Layer 
       1. Buat file `testing-api.sh` berisi script cURL untuk melakukan request ke API backend. 
          ![Gambar Testing API](./image/test-apps1.png)
       
@@ -476,7 +476,7 @@
 
          [![Tonton Video](https://img.youtube.com/vi/jJomOK25Y2c/0.jpg)](https://www.youtube.com/watch?v=jJomOK25Y2c)
          
-   2. **Pengujian Monitoring Layer**
+   2. ## Pengujian Monitoring Layer
 
       Layer monitoring diuji dengan cara memantau performa aplikasi dan mengumpulkan metrik dari berbagai komponen sistem. Pengujian dilakukan pada fitur cAdvisor, Prometheus, dan Grafana.
 
